@@ -2,23 +2,62 @@
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 470px"></button>
+            <div class="modal-body d-flex justify-content-center gap-5 p-4" style="background: #F2F2F2">
+                <form id="orderForm">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="name" class="form-control border-0 rounded-3"
+                                   placeholder="Ваше ім'я"
+                                   required style="height: 55px;" maxlength="32">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="phone" class="form-control border-0 rounded-3"
+                                   placeholder="Ваш номер телефону" required style="height: 55px;" maxlength="32">
+                        </div>
+                        <div class="col-12">
+                    <textarea class="form-control border-0 rounded-3" name="car_model"
+                              placeholder="Марка та модель авто" required style="height: 100px;"
+                              maxlength="32"></textarea>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="vin_code" class="form-control border-0 rounded-3"
+                                   placeholder="VIN код"
+                                   style="height: 55px;" maxlength="32">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="part_name" class="form-control border-0 rounded-3"
+                                   placeholder="Назва запчастини" style="height: 55px;" maxlength="64">
+                        </div>
+                        <div class="col-12">
+                    <textarea class="form-control border-0 rounded-3" name="additional_info"
+                              placeholder="Додаткова інформація" style="height: 100px;" maxlength="128"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100 py-3" style="border-radius: 5px;">
+                                Замовити<i
+                                    class="fa fa-arrow-right ms-3"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <div class="modal-header justify-content-center">
-                <h5 class="modal-title text-center" id="contactModalLabel">Оберіть платформу для зв'язку:</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title text-center" id="contactModalLabel">Або<br> оберіть платформу для зв'язку:</h5>
             </div>
             <div class="modal-body d-flex justify-content-center gap-5 p-4">
-                <a href="https://t.me/onixruda" target="_blank" class="btn py-3 px-4 text-white"
+                <a href="{{ telegram_value }}" target="_blank" class="btn py-3 px-4 text-white"
                    style="background-color: #0088cc; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
                     <small class="fab fa-telegram me-2"></small>Telegram
                 </a>
-                <a href="viber://chat?number=%2B380688218007" class="btn py-3 px-4 text-white"
+                <a href="{{ viber_value }}" class="btn py-3 px-4 text-white"
                    style="background-color: #665cac; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
                     <small class="fab fa-viber me-2"></small>Viber
                 </a>
             </div>
             <div class="modal-footer justify-content-center">
                 <p class="text-center m-0">Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за
-                    номером: +38 (068) 821 80 07</p>
+                    номером: {{ phone_value }}</p>
             </div>
         </div>
     </div>

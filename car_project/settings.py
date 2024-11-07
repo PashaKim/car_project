@@ -124,6 +124,17 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+TELEGRAM_VALUE = ""
+VIBER_VALUE = ""
+PHONE_VALUE = ""
+MAX_PAST_REQUESTS = 3
+
+SMTP_SERVER = ""
+SMTP_PORT = ""
+MAIL_FROM = ""
+MAIL_PASS = ""
+MAIL_TO = ""
+
 
 try:
     from .local_settings import *

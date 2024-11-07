@@ -19,9 +19,10 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from main.views import LandingView
+from main.views import LandingView, CustomerRequestFormView
 
 urlpatterns = [
     path("", LandingView.as_view(), name='main'),
     path("moderatory/", admin.site.urls),
+    path("save_form/", CustomerRequestFormView.as_view())
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
