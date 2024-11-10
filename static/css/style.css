@@ -181,6 +181,9 @@
         display: none !important;
     }
 }
+.btn-close {
+    margin-left: auto; /* Додає автоматичне вирівнювання праворуч */
+}
 .price-badge {
     display: inline-block;
     color: #000; /* черный текст */
