@@ -14,40 +14,53 @@
 <!-- Відкриття модального вікна по кнопці -->
 <script src="{% static 'js/main.js' %}"></script>
 <script>
-    document.querySelectorAll('.modal a').forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = bootstrap.Modal.getInstance(document.querySelector('#contactModal'));
-            modal.hide();
+    function closeModal(modalId) {
+        document.querySelectorAll('.modal a').forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = bootstrap.Modal.getInstance(document.querySelector(modalId));
+                modal.hide();
+            });
         });
-    });
+    }
+
+    closeModal('#contactModal1')
+    closeModal('#contactModal2')
+    closeModal('#contactModal3')
+
 </script>
 <!-- JavaScript для відправки форми -->
 <script>
-    document.getElementById('orderForm').addEventListener('submit', function (e) {
-        e.preventDefault(); // Блокуємо стандартне відправлення форми
+    function saveForm(formName) {
+        document.getElementById(formName).addEventListener('submit', function (e) {
+            e.preventDefault(); // Блокуємо стандартне відправлення форми
 
-        // Збираємо дані форми
-        const formData = new FormData(this);
+            // Збираємо дані форми
+            const formData = new FormData(this);
 
-        // Відправка даних через AJAX
-        fetch('/save_form/', {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
-                    alert("Ваше замовлення успішно надіслано!");
-                    this.reset(); // Очищаємо форму після успішної відправки
-                } else {
-                    alert("Вибачте, сталася помилка (" + JSON.stringify(data.detail) + "). Спробуйте ще раз.");
-                }
+            // Відправка даних через AJAX
+            fetch('/save_form/', {
+                method: 'POST',
+                body: formData
             })
-            .catch(error => {
-                console.error('Error:', error);
-                alert("Вибачте, сталася помилка при відправці.");
-            });
-    });
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert("Ваше замовлення успішно надіслано!");
+                        this.reset(); // Очищаємо форму після успішної відправки
+                    } else {
+                        alert("Вибачте, сталася помилка (" + JSON.stringify(data.detail) + "). Спробуйте ще раз.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("Вибачте, сталася помилка при відправці.");
+                });
+        });
+    }
+
+    saveForm('orderForm1')
+    saveForm('orderForm2')
+    saveForm('orderForm3')
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {

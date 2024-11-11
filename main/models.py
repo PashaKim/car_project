@@ -26,14 +26,21 @@ class CustomerRequest(models.Model):
         ON_WORK = 'OW', 'On work'
         DONE = 'DN', 'Done'
 
+    class RequestType(models.TextChoices):
+        DISASSEMBLY = 'DY', 'Disassembly'
+        BUY = 'BU', 'Buy'
+        PART = 'PT', 'Part'
+
     car_model = models.CharField(max_length=32, blank=True, default="")
     car_vin = models.CharField(max_length=32, blank=True, default="")
-    car_part_name = models.CharField(max_length=64, blank=True, default="")
-    additional_info = models.CharField(max_length=128, blank=True, default="")
+    car_part_name = models.CharField(max_length=128, blank=True, default="")
+    car_city = models.CharField(max_length=128, blank=True, default="")
+    additional_info = models.CharField(max_length=256, blank=True, default="")
 
     customer = models.ForeignKey(Customer, related_name='customer_requests', on_delete=models.CASCADE)
 
     created = models.DateTimeField(auto_now_add=True)
+    request_type = models.CharField(max_length=2, choices=RequestType.choices, default=RequestType.PART)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
 
     class Meta:

@@ -3,7 +3,7 @@ from datetime import date
 from django import forms
 from django.contrib.auth.models import User
 
-from car_project.settings import MAX_PAST_REQUESTS
+from car_project.settings import MAX_PAST_REQUESTS, IS_SEND_EMAIL
 from car_project.utils import send_email_to_admin
 from main.models import Customer, CustomerRequest
 
@@ -18,8 +18,10 @@ class CustomerRequestForm(forms.Form):
     phone = forms.CharField(max_length=32)
     car_model = forms.CharField(max_length=32)
     vin_code = forms.CharField(max_length=32, required=False)
-    part_name = forms.CharField(max_length=64, required=False)
-    additional_info = forms.CharField(max_length=128, required=False)
+    part_name = forms.CharField(max_length=128, required=False)
+    car_city = forms.CharField(max_length=128, required=False)
+    additional_info = forms.CharField(max_length=256, required=False)
+    request_type = forms.CharField(max_length=32, required=False)
 
     def save(self):
         customer = Customer.objects.filter(ip_data=self.ip_value).first()
@@ -43,10 +45,12 @@ class CustomerRequestForm(forms.Form):
             car_model=self.cleaned_data.get('car_model', ''),
             car_vin=self.cleaned_data.get('vin_code', ''),
             car_part_name=self.cleaned_data.get('part_name', ''),
+            car_city=self.cleaned_data.get('car_city', ''),
+            request_type=self.cleaned_data.get('request_type', ''),
             additional_info=self.cleaned_data.get('additional_info', ''),
         )
-
-        send_email_to_admin(instance)
+        if IS_SEND_EMAIL:
+            send_email_to_admin(instance)
 
         return instance
 
