@@ -12,6 +12,7 @@ def send_email_to_admin(customer_request: CustomerRequest):
         Марка та модель авто: {customer_request.car_model} \n
         VIN: {customer_request.car_vin} \n
         Назва запчастини: {customer_request.car_part_name} \n
+        Місто: {customer_request.car_city} \n
         Додаткова інформація: {customer_request.additional_info} \n
         
         в адмінці: moderatory/main/customerrequest/{customer_request.id}/change/
