@@ -24,14 +24,15 @@ class CustomerRequestForm(forms.Form):
     request_type = forms.CharField(max_length=32, required=False)
 
     def save(self):
-        customer = Customer.objects.filter(ip_data=self.ip_value).first()
+        # Un Comment on prod
+        # customer = Customer.objects.filter(ip_data=self.ip_value).first()
+        #
+        # if customer and customer.status == Customer.Status.BANNED:
+        #     return None
 
-        if customer and customer.status == Customer.Status.BANNED:
-            return None
-
-        if not customer:
-            user = self.create_user()
-            customer = self.create_customer(user)
+        # if not customer:
+        user = self.create_user()
+        customer = self.create_customer(user)
 
         past_requests = CustomerRequest.objects.filter(customer=customer, created__date=date.today())
 
