@@ -43,6 +43,9 @@ class CustomerRequest(models.Model):
     request_type = models.CharField(max_length=2, choices=RequestType.choices, default=RequestType.PART)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
 
+    def customer_name(self):
+        return self.customer.user.first_name
+
     class Meta:
         ordering = ['-created']
 
