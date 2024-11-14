@@ -1,10 +1,11 @@
 {% load static %}
+{% load i18n %}
 <!-- Service Start -->
 <div class="container-xxl service py-5" id="services">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary text-uppercase">// ПОСЛУГИ //</h5>
-            <h3 class="mb-5">Доставка безкоштовно по м. Київ, м. Бровари та району (Київ. обл.)</h3>
+            <h5 class="text-primary text-uppercase">{% translate "// ПОСЛУГИ //" %}</h5>
+            <h3 class="mb-5">{% translate "Доставка безкоштовно по м. Київ, м. Бровари та району (Київ. обл.)" %}</h3>
         </div>
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-4">
@@ -18,7 +19,7 @@
                             aria-controls="tab-pane-1"
                             aria-selected="false">
                         <i class="fa fa-box-open fa-2x me-3 icon-default"></i>
-                        <h4 class="m-0">Замовлення запчастин</h4>
+                        <h4 class="m-0">{% translate "Замовлення запчастин" %}</h4>
                     </button>
                     <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
                             id="tab-2"
@@ -29,7 +30,7 @@
                             aria-controls="tab-pane-2"
                             aria-selected="true">
                         <i class="fa fa-cogs fa-2x me-3 icon-default"></i>
-                        <h4 class="m-0">Підбір та замовлення двигуна</h4>
+                        <h4 class="m-0">{% translate "Підбір та замовлення двигуна" %}</h4>
                     </button>
                     <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
                             id="tab-3"
@@ -40,7 +41,7 @@
                             aria-controls="tab-pane-3"
                             aria-selected="true">
                         <i class="fa fa-tools fa-2x me-3 icon-default"></i>
-                        <h4 class="m-0">Розбір авто</h4>
+                        <h4 class="m-0">{% translate "Розбір авто" %}</h4>
                     </button>
                     <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
                             id="tab-4"
@@ -51,7 +52,7 @@
                             aria-controls="tab-pane-4"
                             aria-selected="true">
                         <i class="fa fa-comments fa-2x me-3 icon-default"></i>
-                        <h4 class="m-0">Консультації по авто</h4>
+                        <h4 class="m-0">{% translate "Консультації по авто" %}</h4>
                     </button>
                 </div>
             </div>
@@ -65,13 +66,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <h3 class="mb-3">Швидке замовлення запчастин</h3>
-                                <p class="mb-4">Ми допоможемо вам знайти оригінальні та якісні запчастини, відповідні саме вашому авто, що підвищить його надійність і продовжить термін експлуатації.</p>
-                                <div class="price-badge mb-3">Вартість: $XXX-$XXX (Залежить від авто)</div>
-                                <p><i class="fa fa-check text-success me-3"></i>Оригінальні деталі</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Швидке постачання</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Гарантія якості</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">Замовити<i class="fa fa-arrow-right ms-3"></i></a>
+                                <h3 class="mb-3">{% translate "Швидке замовлення запчастин" %}</h3>
+                                <p class="mb-4">{% translate "Ми допоможемо вам знайти оригінальні та якісні запчастини, відповідні саме вашому авто, що підвищить його надійність і продовжить термін експлуатації." %}</p>
+                                <div class="price-badge mb-3">{% translate "Вартість: $XXX-$XXX (Залежить від авто)" %}</div>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Оригінальні деталі" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Швидке постачання" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія якості" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
                         </div>
                     </div>
@@ -83,13 +84,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <h3 class="mb-3">Підбір та замовлення двигуна</h3>
-                                <p class="mb-4">Наші спеціалісти надають професійні послуги з пошуку та підбору двигуна під ваше авто. Взаємодіємо з великою базою як нових так і б/у двигунів з доступом до їх складів</p>
-                                <div class="price-badge mb-3">Вартість: $XXX-$XXX (Залежить від авто)</div>
-                                <p><i class="fa fa-check text-success me-3"></i>Висока кваліфікація фахівців</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Високоточне обладнання</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Гарантія на виконані роботи</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">Замовити<i class="fa fa-arrow-right ms-3"></i></a>
+                                <h3 class="mb-3">{% translate "Підбір та замовлення двигуна" %}</h3>
+                                <p class="mb-4">{% translate "Наші спеціалісти надають професійні послуги з пошуку та підбору двигуна під ваше авто. Взаємодіємо з великою базою як нових так і б/у двигунів з доступом до їх складів" %}</p>
+                                <div class="price-badge mb-3">{% translate "Вартість: $XXX-$XXX (Залежить від авто)" %}</div>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Висока кваліфікація фахівців" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Високоточне обладнання" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія на виконані роботи" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
                         </div>
                     </div>
@@ -101,13 +102,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <h3 class="mb-3">Розбір авто</h3>
-                                <p class="mb-4">Наші спеціалісти надають професійні послуги з розбору автомобілів будь-яких марок. Ви отримаєте доступ до широкого асортименту запчастин, включаючи рідкісні та складні у пошуку деталі.</p>
-                                <div class="price-badge mb-3">Вартість: $XXX-$XXX (Залежить від авто)</div>
-                                <p><i class="fa fa-check text-success me-3"></i>Професійний підхід</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Високоточне обладнання</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Гарантія на виконані роботи</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal2" style="border-radius: 5px;">Замовити<i class="fa fa-arrow-right ms-3"></i></a>
+                                <h3 class="mb-3">{% translate "Розбір авто" %}</h3>
+                                <p class="mb-4">{% translate "Наші спеціалісти надають професійні послуги з розбору автомобілів будь-яких марок. Ви отримаєте доступ до широкого асортименту запчастин, включаючи рідкісні та складні у пошуку деталі." %}</p>
+                                <div class="price-badge mb-3">{% translate "Вартість: $XXX-$XXX (Залежить від авто)" %}</div>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Професійний підхід" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Високоточне обладнання" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія на виконані роботи" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal2" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
                         </div>
                     </div>
@@ -119,13 +120,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <h3 class="mb-3">Консультації по авто</h3>
-                                <p class="mb-4">Наша команда експертів надає консультації з будь-яких питань, пов'язаних з вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти оптимальні рішення для вашого авто..</p>
-                                <div class="price-badge mb-3">Вартість: ХХХХ грн./год</div>
-                                <p><i class="fa fa-check text-success me-3"></i>Висока кваліфікація фахівців</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Індивідуальний підхід</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Підтримка на всіх етапах</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal3" style="border-radius: 5px;">Замовити<i class="fa fa-arrow-right ms-3"></i></a>
+                                <h3 class="mb-3">{% translate "Консультації по авто" %}</h3>
+                                <p class="mb-4">{% translate "Наша команда експертів надає консультації з будь-яких питань, пов'язаних з вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти оптимальні рішення для вашого авто.." %}</p>
+                                <div class="price-badge mb-3">{% translate "Вартість: ХХХХ грн./год" %}</div>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Висока кваліфікація фахівців" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Індивідуальний підхід" %}</p>
+                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Підтримка на всіх етапах" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal3" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
                         </div>
                     </div>

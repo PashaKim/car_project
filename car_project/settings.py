@@ -46,6 +46,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = "car_project.urls"
@@ -104,7 +105,18 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = 'uk'
+DEFAULT_LANGUAGE = 'uk'
+LANGUAGES = (
+    # ('en', 'English'),
+    ('ru', 'Russian'),
+    ('uk', 'Ukrainian'),
+)
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',
+)
+
+USE_L10N = True
 
 TIME_ZONE = "UTC"
 

@@ -1,3 +1,4 @@
+{% load i18n %}
 <!-- Modal Popup -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -10,30 +11,30 @@
                     <div class="row g-3">
                         <div class="col-12 col-sm-6">
                             <input type="text" name="name" class="form-control border-0 rounded-3"
-                                   placeholder="Ваше ім'я"
+                                   placeholder="{% trans "Ваше ім'я" %}"
                                    required style="height: 55px;" maxlength="32">
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="text" name="phone" class="form-control border-0 rounded-3"
-                                   placeholder="Ваш номер телефону" required style="height: 55px;" maxlength="32">
+                                   placeholder="{% trans "Ваш номер телефону" %}" required style="height: 55px;" maxlength="32">
                         </div>
                         <div class="col-12">
                     <textarea class="form-control border-0 rounded-3" name="car_model"
-                              placeholder="Марка та модель авто" required style="height: 100px;"
+                              placeholder="{% trans "Марка та модель авто" %}" required style="height: 100px;"
                               maxlength="32"></textarea>
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="text" name="vin_code" class="form-control border-0 rounded-3"
-                                   placeholder="VIN код"
+                                   placeholder="{% trans "VIN код" %}"
                                    style="height: 55px;" maxlength="32">
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="text" name="part_name" class="form-control border-0 rounded-3"
-                                   placeholder="Назва запчастини" style="height: 55px;" maxlength="64">
+                                   placeholder="{% trans "Назва запчастини" %}" style="height: 55px;" maxlength="64">
                         </div>
                         <div class="col-12">
                     <textarea class="form-control border-0 rounded-3" name="additional_info"
-                              placeholder="Додаткова інформація" style="height: 100px;" maxlength="128"></textarea>
+                              placeholder="{% trans "Додаткова інформація" %}" style="height: 100px;" maxlength="128"></textarea>
                         </div>
                     </div>
                     <div class="col-12">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary w-100 py-3" style="border-radius: 5px;">
-                            Замовити<i
+                            {% trans "Замовити" %}<i
                                 class="fa fa-arrow-right ms-3"></i></button>
                     </div>
                 </form>

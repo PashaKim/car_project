@@ -14,15 +14,26 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from main.views import LandingView, CustomerRequestFormView
+from main.views import LandingView, CustomerRequestFormView, redirect_main
 
 urlpatterns = [
-    path("", LandingView.as_view(), name='main'),
+    path("uk/", redirect_main, name='main'),
+    path("i18n/", include("django.conf.urls.i18n")),
     path("moderatory/", admin.site.urls),
     path("save_form/", CustomerRequestFormView.as_view())
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+
+urlpatterns += i18n_patterns(
+    path("", LandingView.as_view(), name='main'),
+    prefix_default_language=False
+)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
