@@ -130,6 +130,43 @@
 .nav-link.active .icon-default {
     color: #fff !important;
 }
+/* Мобильные устройства (до 576px) */
+@media (max-width: 576px) {
+	 .navbar-brand img {
+        height: 50px; /* Увеличиваем высоту логотипа */
+        min-width: 70px; /* Минимальная ширина логотипа */
+    }
+
+    .navbar-brand h2 {
+        font-size: 1.1rem; /* Уменьшаем текст, чтобы уместить логотип и текст в одну строку */
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        padding: 0 10px; /* Уменьшаем отступы по бокам */
+        font-size: 0.85rem; /* Уменьшаем размер текста */
+    }
+
+    .navbar-brand img {
+        max-width: 30px; /* Уменьшаем размер логотипа */
+        height: auto;
+    }
+
+    .navbar-brand .text-logo {
+        font-size: 0.85rem; /* Уменьшаем размер текста логотипа */
+        margin-left: 5px; /* Уменьшаем отступ между логотипом и текстом */
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        margin-left: auto;
+    }
+
+    .navbar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
 
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
