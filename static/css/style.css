@@ -110,7 +110,7 @@
 .navbar-toggler.open .navbar-toggler-icon {
     transform: rotate(45deg);
 }
-@media (min-width: 1080px) {
+@media (min-width: 1022px) {
     .navbar-collapse {
         padding-left: 40px; /* Відступ зліва для навбару */
         padding-right: 40px; /* Відступ справа для симетрії */
@@ -141,6 +141,22 @@
 .nav-link.active .icon-default {
     color: #fff !important;
 }
+.navbar-brand h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Робимо текст напівжирним, як у меню */
+    text-transform: uppercase; /* Застосовуємо заглавні літери */
+    font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
+    letter-spacing: 1px; /* Додаємо відступи між літерами */
+    line-height: 1.8; /* Встановлюємо висоту рядка на 180% */
+    color: var(--primary); /* Використовуємо основний колір */
+}
+/* Збільшуємо розмір шрифта логотипа на великих екранах */
+@media (min-width: 1080px) {
+    .navbar-brand h2 {
+        font-size: 1.5rem; /* Збільшуємо розмір шрифта */
+        letter-spacing: 1.5px; /* Збільшуємо відступи між літерами для кращого вигляду */
+    }
+}
 /* Мобильные устройства (до 576px) */
 @media (max-width: 576px) {
 	 .navbar-brand img {
@@ -148,9 +164,7 @@
         min-width: 70px; /* Минимальная ширина логотипа */
     }
 
-    .navbar-brand h2 {
-        font-size: 1.1rem; /* Уменьшаем текст, чтобы уместить логотип и текст в одну строку */
-    }
+
     .navbar-brand {
         display: flex;
         align-items: center;
