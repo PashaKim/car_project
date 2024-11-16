@@ -63,35 +63,41 @@
     saveForm('orderForm3')
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const navbarToggler = document.querySelector(".navbar-toggler");
         const navbarCollapse = document.querySelector("#navbarCollapse");
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-        navbarToggler.addEventListener("click", function () {
-            navbarToggler.classList.toggle("open");
+        // Закриття бургер-меню після натискання на посилання
+        navLinks.forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = 80; // Відступ від верхньої частини
+
+                // Закриваємо меню бургер
+                if (navbarCollapse.classList.contains("show")) {
+                    const bootstrapCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bootstrapCollapse.hide();
+                }
+
+                // Додаємо затримку перед скролом
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }, 300); // Затримка у 300 мс
+            });
         });
 
+        // Видаляємо клас 'open' з іконки бургер-меню після закриття меню
         navbarCollapse.addEventListener("hidden.bs.collapse", function () {
             navbarToggler.classList.remove("open");
         });
         navbarCollapse.addEventListener("shown.bs.collapse", function () {
             navbarToggler.classList.add("open");
-        });
-    });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-        navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-                // Убираем класс 'active' со всех ссылок
-                navLinks.forEach(link => link.classList.remove("active"));
-
-                // Добавляем класс 'active' только к нажатой ссылке
-                this.classList.add("active");
-            });
         });
     });
 </script>
