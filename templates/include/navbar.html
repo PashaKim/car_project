@@ -23,9 +23,24 @@
             <a href="#reviews" class="nav-item nav-link">{% translate "Відгуки" %}</a>
             <a href="#contacts" class="nav-item nav-link">{% translate "Контакти" %}</a>
         </div>
+                <!-- Перемикач мов -->
+        <div class="h-100 d-flex align-items-center justify-content-center py-2">
+            {% for language in languages %}
+                <a href="/{{ language }}/"
+                        {% if language == language_code %}
+                   class="text-primary me-2"
+                        {% else %}
+                   class="text-dark me-2"
+                        {% endif %}>
+                    {% if language == "uk" %} UA {% else %} {{language|upper }} {% endif %}
+                    {% if forloop.counter == 1 %} | {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+        <!-- Кнопка Замовити
         <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal"
            data-bs-target="#contactModal">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i>
-        </a>
+        </a>-->
     </div>
 </nav>
 <!-- Navbar End -->

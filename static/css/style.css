@@ -110,6 +110,17 @@
 .navbar-toggler.open .navbar-toggler-icon {
     transform: rotate(45deg);
 }
+@media (min-width: 1080px) {
+    .navbar-collapse {
+        padding-left: 40px; /* Відступ зліва для навбару */
+        padding-right: 40px; /* Відступ справа для симетрії */
+    }
+
+    .navbar-nav,
+    .h-100.d-flex {
+        justify-content: flex-start; /* Вирівнюємо контент по лівому краю */
+    }
+}
 
 /* Стиль для активных и наведенных ссылок */
 .navbar-light .navbar-nav .nav-link:hover,
