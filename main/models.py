@@ -27,7 +27,7 @@ class CustomerRequest(models.Model):
         DONE = 'DN', 'Done'
 
     class RequestType(models.TextChoices):
-        DISASSEMBLY = 'DY', 'Disassembly'
+        Engine = 'EG', 'Engine'
         BUY = 'BU', 'Buy'
         PART = 'PT', 'Part'
 
