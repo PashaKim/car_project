@@ -319,7 +319,7 @@ msgstr ""
 
 #: .\templates\include\upper_service.html:96
 msgid "Вартість: $XXХ (Залежить від авто)"
-msgstr "Стоимость $XXХ (Зависит от авто)"
+msgstr "Стоимость: $XXХ (Зависит от авто)."
 
 #: .\templates\include\upper_service.html:97
 #: .\templates\include\upper_service.html:138

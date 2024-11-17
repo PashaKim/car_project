@@ -145,6 +145,14 @@
         transform: translateY(-5px);
     }
 }
+/* настроили внешний вид знака + */
+.plus-sign {
+    margin-left: 5px;
+    color: #fff; /* Белый цвет для знака плюс */
+    font-size: 1.2em; /* Размер знака плюс */
+    line-height: 1; /* Убираем дополнительное пространство */
+    vertical-align: baseline; /* Выровнять по базовой линии цифр */
+}
 
 /* Відображаємо стрілку для активної кнопки */
 .nav-link.active .mobile-arrow {
