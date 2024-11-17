@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-17 10:59+0200\n"
+"POT-Creation-Date: 2024-11-17 12:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: .\templates\include\carousel.html:18 .\templates\include\carousel.html:40
 #: .\templates\include\carousel.html:61
 #: .\templates\include\contact_model\modal_1.html:45
-#: .\templates\include\contact_model\modal_2.html:35
+#: .\templates\include\contact_model\modal_2.html:44
 #: .\templates\include\contact_model\modal_3.html:40
 #: .\templates\include\navbar.html:72 .\templates\include\upper_service.html:82
 #: .\templates\include\upper_service.html:100
@@ -77,15 +77,17 @@ msgid "Марка та модель авто"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:28
+#: .\templates\include\contact_model\modal_2.html:28
 msgid "VIN код"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:33
+#: .\templates\include\contact_model\modal_2.html:33
 msgid "Назва запчастини"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:37
-#: .\templates\include\contact_model\modal_2.html:28
+#: .\templates\include\contact_model\modal_2.html:37
 #: .\templates\include\contact_model\modal_3.html:33
 msgid "Додаткова інформація"
 msgstr ""
@@ -121,7 +123,7 @@ msgstr ""
 msgid "Контакти"
 msgstr ""
 
-#: .\templates\include\footer.html:8
+#: .\templates\include\footer.html:8 .\templates\include\topbar.html:8
 msgid "Київ, Бровари, Київська область"
 msgstr ""
 
@@ -187,7 +189,7 @@ msgid "Закуплено запчастин"
 msgstr ""
 
 #: .\templates\include\upper_facts.html:14
-msgid "Підборів під ключ"
+msgid "Підборів та викупів під ключ"
 msgstr ""
 
 #: .\templates\include\upper_facts.html:19
