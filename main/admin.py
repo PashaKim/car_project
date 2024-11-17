@@ -26,7 +26,7 @@ class CustomerAdmin(admin.ModelAdmin):
 @admin.register(CustomerRequest)
 class CustomerRequestAdmin(admin.ModelAdmin):
     list_display = [
-        'request_type', 'car_model_b', 'car_vin', 'car_part_name', 'car_city', 'customer_name', 'customer', 'status', 'created'
+        'request_type', 'car_model_b', 'car_vin', 'car_part_name', 'car_city', 'customer_name', 'customer', 'status', 'created', 'additional_info'
     ]
     list_display_links = ('request_type', 'car_model_b')
     list_filter = ['created', 'status', 'request_type']
