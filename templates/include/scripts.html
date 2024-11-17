@@ -102,3 +102,33 @@
         });
     });
 </script>
+<!-- Автоскролл на мобильных к контенту блока про услуги -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll('[data-bs-toggle="pill"]');
+
+    tabButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            if (window.innerWidth < 768) { // Тільки для мобільних пристроїв
+                // Прибираємо стрілки з усіх кнопок
+                tabButtons.forEach(btn => {
+                    const arrow = btn.querySelector(".mobile-arrow");
+                    if (arrow) {
+                        arrow.style.display = "none";
+                    }
+                });
+
+                // Показуємо стрілку тільки біля активної кнопки
+                const activeArrow = this.querySelector(".mobile-arrow");
+                if (activeArrow) {
+                    activeArrow.style.display = "inline-block";
+                }
+
+                // Прокручуємо до активного блоку
+                const targetPane = document.querySelector(this.getAttribute("data-bs-target"));
+                targetPane.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
+</script>

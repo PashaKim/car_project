@@ -129,6 +129,35 @@
     margin: 3px;
 }
 
+/* Стиль для стрілки на мобільних пристроях */
+.mobile-arrow {
+    font-size: 1.2rem;
+    color: #FFFFFF; /* Чорний колір для стрілки */
+    animation: bounce 1.5s infinite;
+    display: none; /* Приховуємо стрілку за замовчуванням */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Відображаємо стрілку для активної кнопки */
+.nav-link.active .mobile-arrow {
+    display: inline-block;
+}
+
+
+/* Відображаємо стрілку тільки для активної кнопки */
+.nav-link.active .mobile-arrow {
+    display: inline-block;
+}
+
+
 /* Стилі для вирівнювання іконок */
 .burger-contacts small,
 .burger-social a {

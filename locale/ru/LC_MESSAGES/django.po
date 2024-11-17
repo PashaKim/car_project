@@ -51,8 +51,8 @@ msgid "// Автовикуп //"
 msgstr "// Автовыкуп //"
 
 #: .\templates\include\carousel.html:59
-msgid "Терміновий викуп авто (м. Бровари, м. Київ)"
-msgstr ""
+msgid "Терміновий (швидкий) викуп авто"
+msgstr "Срочный (быстрый) выкуп авто"
 
 #: .\templates\include\contact_model\modal_1.html:14
 #: .\templates\include\contact_model\modal_2.html:14
