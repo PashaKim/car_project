@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-16 11:59+0200\n"
+"POT-Creation-Date: 2024-11-17 10:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "// Автозапчастини  //"
 msgstr ""
 
 #: .\templates\include\carousel.html:16
-msgid "Оригінальні та б/у запчастини для будь-якої марки авто"
+msgid "Оригінальні та б/у запчастини до будь-якої марки авто"
 msgstr ""
 
 #: .\templates\include\carousel.html:18 .\templates\include\carousel.html:40
@@ -31,10 +31,10 @@ msgstr ""
 #: .\templates\include\contact_model\modal_1.html:45
 #: .\templates\include\contact_model\modal_2.html:35
 #: .\templates\include\contact_model\modal_3.html:40
-#: .\templates\include\navbar.html:27 .\templates\include\upper_service.html:75
-#: .\templates\include\upper_service.html:93
-#: .\templates\include\upper_service.html:111
-#: .\templates\include\upper_service.html:129
+#: .\templates\include\navbar.html:72 .\templates\include\upper_service.html:82
+#: .\templates\include\upper_service.html:100
+#: .\templates\include\upper_service.html:123
+#: .\templates\include\upper_service.html:141
 msgid "Замовити"
 msgstr ""
 
@@ -43,7 +43,8 @@ msgid "// Автопослуги //"
 msgstr ""
 
 #: .\templates\include\carousel.html:38
-msgid "Розбірка авто на запчастини"
+#: .\templates\include\upper_service.html:34
+msgid "Замовлення і підбір двигунів та коробок передач"
 msgstr ""
 
 #: .\templates\include\carousel.html:58
@@ -51,7 +52,7 @@ msgid "// Автовикуп //"
 msgstr ""
 
 #: .\templates\include\carousel.html:59
-msgid "Терміновий викуп авто (м. Бровари, м. Київ)"
+msgid "Терміновий (швидкий) викуп авто"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:14
@@ -90,8 +91,14 @@ msgstr ""
 msgid "Ваше місто/село"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_footer.html:2
+#: .\templates\include\contact_model\modal_footer.html:3
 msgid "Або<br> оберіть платформу для зв'язку: "
+msgstr ""
+
+#: .\templates\include\contact_model\modal_footer.html:17
+msgid ""
+"Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
+"номером: "
 msgstr ""
 
 #: .\templates\include\examples.html:7
@@ -103,7 +110,7 @@ msgid "Підбір запчастин та закупівля нашим клі
 msgstr ""
 
 #: .\templates\include\examples.html:35
-msgid "Великий склад двигунів"
+msgid "Великий склад двигунів, коробок передач та інших запчастин"
 msgstr ""
 
 #: .\templates\include\footer.html:7 .\templates\include\footer.html:24
@@ -111,7 +118,7 @@ msgstr ""
 msgid "Контакти"
 msgstr ""
 
-#: .\templates\include\footer.html:8 .\templates\include\topbar.html:8
+#: .\templates\include\footer.html:8
 msgid "Київ, Бровари, Київська область"
 msgstr ""
 
@@ -193,104 +200,166 @@ msgid "// ПОСЛУГИ //"
 msgstr ""
 
 #: .\templates\include\upper_service.html:8
-msgid "Доставка безкоштовно по м. Київ, м. Бровари та району (Київ. обл.)"
+msgid ""
+"Ми велика мережа розборок в Україні та Європі, маємо склади в багатьох "
+"містах країни."
+msgstr ""
+
+#: .\templates\include\upper_service.html:8
+msgid ""
+"Терміновий (швидкий) викуп авто в Броварах та інших містах України та Європи"
 msgstr ""
 
 #: .\templates\include\upper_service.html:22
-msgid "Замовлення запчастин"
+msgid "Замовлення нових запчастин"
 msgstr ""
 
-#: .\templates\include\upper_service.html:33
-#: .\templates\include\upper_service.html:87
-msgid "Підбір та замовлення двигуна"
+#: .\templates\include\upper_service.html:46
+msgid "Автовикуп"
 msgstr ""
 
-#: .\templates\include\upper_service.html:44
-#: .\templates\include\upper_service.html:105
-msgid "Розбір авто"
-msgstr ""
-
-#: .\templates\include\upper_service.html:55
-#: .\templates\include\upper_service.html:123
+#: .\templates\include\upper_service.html:58
+#: .\templates\include\upper_service.html:135
 msgid "Консультації по авто"
 msgstr ""
 
-#: .\templates\include\upper_service.html:69
-msgid "Швидке замовлення запчастин"
-msgstr ""
-
-#: .\templates\include\upper_service.html:70
-msgid ""
-"Ми допоможемо вам знайти оригінальні та якісні запчастини, відповідні саме "
-"вашому авто, що підвищить його надійність і продовжить термін експлуатації."
-msgstr ""
-
-#: .\templates\include\upper_service.html:71
-#: .\templates\include\upper_service.html:89
-#: .\templates\include\upper_service.html:107
-msgid "Вартість: $XXX-$XXX (Залежить від авто)"
-msgstr ""
-
-#: .\templates\include\upper_service.html:72
-msgid "Оригінальні деталі"
-msgstr ""
-
 #: .\templates\include\upper_service.html:73
-msgid "Швидке постачання"
+msgid ""
+"Ми велика мережа розборок в Україні та Європі маємо склади в багатьох містах "
+"країни "
 msgstr ""
 
 #: .\templates\include\upper_service.html:74
-msgid "Гарантія якості"
-msgstr ""
-
-#: .\templates\include\upper_service.html:88
 msgid ""
-"Наші спеціалісти надають професійні послуги з пошуку та підбору двигуна під "
-"ваше авто. Взаємодіємо з великою базою як нових так і б/у двигунів з "
-"доступом до їх складів"
+"Гарантуємо точний підбір запчастин та агрегатів на Ваше авто по VIN-номеру "
+"автомобіля"
 msgstr ""
 
-#: .\templates\include\upper_service.html:90
-#: .\templates\include\upper_service.html:126
+#: .\templates\include\upper_service.html:75
+msgid ""
+"Нові оригінальні запчастини та їх бюджетні аналоги, вживані запчастини в "
+"гарному стані для будь-якої марки авто по приємним цінам, а головне з "
+"можливістю знижок при наступному замовленні у нас "
+msgstr ""
+
+#: .\templates\include\upper_service.html:76
+msgid ""
+"Двигуни, коробки передач, кузовні деталі та інші запчастини з гарантією від "
+"нашої мережі "
+msgstr ""
+
+#: .\templates\include\upper_service.html:77
+msgid "Гарантуємо якість та порядність угоди "
+msgstr ""
+
+#: .\templates\include\upper_service.html:78
+msgid ""
+"Термін доставки поштою по Україні  1-2 дні (відправка в день замовлення) "
+msgstr ""
+
+#: .\templates\include\upper_service.html:79
+msgid "Термін доставки перевізниками з Європи 10-14 днів "
+msgstr ""
+
+#: .\templates\include\upper_service.html:80
+msgid "Гарантія на вживані запчастини 14-30 днів (залежить від запчастини) "
+msgstr ""
+
+#: .\templates\include\upper_service.html:81
+msgid "Гарантія на нові 3-6 місяців (залежить від запчастини)"
+msgstr ""
+
+#: .\templates\include\upper_service.html:94
+msgid "Підбір та замовлення двигуна"
+msgstr ""
+
+#: .\templates\include\upper_service.html:95
+msgid ""
+"Наші спеціалісти надають професійні послуги з пошуку та підбору двигунів та "
+"коробок передач під ваше авто. Взаємодіємо з великою базою як нових так і б/"
+"у агрегатів з доступом до їх складів"
+msgstr ""
+
+#: .\templates\include\upper_service.html:96
+msgid "Вартість: $XXХ (Залежить від авто)"
+msgstr ""
+
+#: .\templates\include\upper_service.html:97
+#: .\templates\include\upper_service.html:138
 msgid "Висока кваліфікація фахівців"
 msgstr ""
 
-#: .\templates\include\upper_service.html:91
-#: .\templates\include\upper_service.html:109
+#: .\templates\include\upper_service.html:98
 msgid "Високоточне обладнання"
 msgstr ""
 
-#: .\templates\include\upper_service.html:92
-#: .\templates\include\upper_service.html:110
+#: .\templates\include\upper_service.html:99
 msgid "Гарантія на виконані роботи"
 msgstr ""
 
-#: .\templates\include\upper_service.html:106
+#: .\templates\include\upper_service.html:112
 msgid ""
-"Наші спеціалісти надають професійні послуги з розбору автомобілів будь-яких "
-"марок. Ви отримаєте доступ до широкого асортименту запчастин, включаючи "
-"рідкісні та складні у пошуку деталі."
+"Терміновий (швидкий) викуп авто в Броварах та інших містах України та Європи "
 msgstr ""
 
-#: .\templates\include\upper_service.html:108
-msgid "Професійний підхід"
+#: .\templates\include\upper_service.html:113
+msgid "-Без пошкоджень"
 msgstr ""
 
-#: .\templates\include\upper_service.html:124
+#: .\templates\include\upper_service.html:114
+msgid "-Після ДТП"
+msgstr ""
+
+#: .\templates\include\upper_service.html:115
+msgid "-В Європі на українській реєстрації"
+msgstr ""
+
+#: .\templates\include\upper_service.html:116
+msgid ""
+"Для того щоб ми придбали Ваше авто,  ціна має бути нижче ринкової вартості "
+"автомобілі по цінам з сайтів не розглянемо для купівлі, можливий лише "
+"комісійний продаж (під нашого клієнта) обговоримо це індивідуально"
+msgstr ""
+
+#: .\templates\include\upper_service.html:117
+msgid "Можливість оцінки авто по фото та короткому опису, без Вашого приїзду."
+msgstr ""
+
+#: .\templates\include\upper_service.html:118
+msgid "Гарантуємо:"
+msgstr ""
+
+#: .\templates\include\upper_service.html:119
+msgid "Лояльність та порядність з нашого боку до клієнта "
+msgstr ""
+
+#: .\templates\include\upper_service.html:120
+msgid "Чистоту в юридичних питаннях "
+msgstr ""
+
+#: .\templates\include\upper_service.html:121
+msgid "Швидку оцінку транспортного засобу (по фото-відео та короткому опису)"
+msgstr ""
+
+#: .\templates\include\upper_service.html:122
+msgid "Швидкий розрахунок на місці  "
+msgstr ""
+
+#: .\templates\include\upper_service.html:136
 msgid ""
 "Наша команда експертів надає консультації з будь-яких питань, пов'язаних з "
 "вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти "
 "оптимальні рішення для вашого авто.."
 msgstr ""
 
-#: .\templates\include\upper_service.html:125
-msgid "Вартість: ХХХХ грн./год"
+#: .\templates\include\upper_service.html:137
+msgid "Безкоштовно!"
 msgstr ""
 
-#: .\templates\include\upper_service.html:127
+#: .\templates\include\upper_service.html:139
 msgid "Індивідуальний підхід"
 msgstr ""
 
-#: .\templates\include\upper_service.html:128
+#: .\templates\include\upper_service.html:140
 msgid "Підтримка на всіх етапах"
 msgstr ""
