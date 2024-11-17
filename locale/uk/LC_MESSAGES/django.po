@@ -169,11 +169,11 @@ msgstr ""
 
 #: .\templates\include\testimonial.html:7
 msgid "// Відгуки //"
-msgstr ""
+msgstr "Отзывы"
 
 #: .\templates\include\testimonial.html:8
 msgid "Наші клієнти кажуть про нас:"
-msgstr ""
+msgstr "Наши клиенты говорят про нас:"
 
 #: .\templates\include\upper_facts.html:9
 msgid "Закуплено запчастин"

@@ -24,7 +24,7 @@ msgstr "// Автозапчасти  //"
 
 #: .\templates\include\carousel.html:16
 msgid "Оригінальні та б/у запчастини для будь-якої марки авто"
-msgstr ""
+msgstr "Оригинальные и б/у запчасти для любой марки авто"
 
 #: .\templates\include\carousel.html:18 .\templates\include\carousel.html:40
 #: .\templates\include\carousel.html:61
@@ -109,27 +109,27 @@ msgstr ""
 #: .\templates\include\footer.html:7 .\templates\include\footer.html:24
 #: .\templates\include\navbar.html:24
 msgid "Контакти"
-msgstr ""
+msgstr "Контакты"
 
 #: .\templates\include\footer.html:8 .\templates\include\topbar.html:8
 msgid "Київ, Бровари, Київська область"
-msgstr ""
+msgstr "Киев, Бровары, Киевская область"
 
 #: .\templates\include\footer.html:20
 msgid "Карта Сайту"
-msgstr ""
+msgstr "Карта Сайта"
 
 #: .\templates\include\footer.html:21 .\templates\include\navbar.html:21
 msgid "Послуги"
-msgstr ""
+msgstr "Услуги"
 
 #: .\templates\include\footer.html:22 .\templates\include\navbar.html:22
 msgid "Приклади робіт"
-msgstr ""
+msgstr "Примеры работ"
 
 #: .\templates\include\footer.html:23 .\templates\include\navbar.html:23
 msgid "Відгуки"
-msgstr ""
+msgstr "Отзывы"
 
 #: .\templates\include\meta.html:5
 msgid ""
