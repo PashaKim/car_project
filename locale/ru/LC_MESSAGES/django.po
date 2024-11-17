@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-17 12:28+0200\n"
+"POT-Creation-Date: 2024-11-17 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,12 +98,19 @@ msgid "Або<br> оберіть платформу для зв'язку: "
 msgstr "Или <br> выберите платформу для связи:"
 
 #: .\templates\include\contact_model\modal_footer.html:17
+#: .\templates\include\contact_model\modal_footer2.html:17
 msgid ""
 "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
 "номером: "
 msgstr ""
 "Если Viber или Telegram у вас отсутствует, пожалуйста, позвоните нам за "
 "номером: "
+
+#: .\templates\include\contact_model\modal_footer2.html:3
+#, fuzzy
+#| msgid "Або<br> оберіть платформу для зв'язку: "
+msgid "Оберіть платформу для зв'язку: "
+msgstr "Или <br> выберите платформу для связи:"
 
 #: .\templates\include\examples.html:7
 msgid "// Приклади //"
@@ -195,19 +202,19 @@ msgstr "// Отзывы //"
 msgid "Наші клієнти кажуть про нас:"
 msgstr "Наши клиенты говорят про нас:"
 
-#: .\templates\include\upper_facts.html:9
+#: .\templates\include\upper_facts.html:11
 msgid "Закуплено запчастин"
 msgstr "Закуплено запчастей"
 
-#: .\templates\include\upper_facts.html:14
+#: .\templates\include\upper_facts.html:18
 msgid "Підборів та викупів під ключ"
 msgstr "Подборов и выкупов под ключ"
 
-#: .\templates\include\upper_facts.html:19
+#: .\templates\include\upper_facts.html:25
 msgid "Років досвіду"
 msgstr "Годов опыта"
 
-#: .\templates\include\upper_facts.html:24
+#: .\templates\include\upper_facts.html:32
 msgid "Щасливих клієнтів"
 msgstr "Счастливых клиентов"
 
