@@ -197,11 +197,9 @@ msgstr "Наши клиенты говорят про нас:"
 
 #: .\templates\include\upper_facts.html:9
 msgid "Закуплено запчастин"
-msgstr "Закупелно запчастей"
+msgstr "Закуплено запчастей"
 
 #: .\templates\include\upper_facts.html:14
-#, fuzzy
-#| msgid "Підборів під ключ"
 msgid "Підборів та викупів під ключ"
 msgstr "Подборов и выкупов под ключ"
 
