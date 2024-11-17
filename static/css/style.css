@@ -105,6 +105,51 @@
 .navbar-toggler-icon {
     transition: transform 0.3s ease;
 }
+/* Вирівнювання контактів та соціальних іконок у бургер-меню */
+.burger-contacts,
+.burger-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Відступи між елементами */
+    flex-wrap: nowrap; /* Запобігаємо переносу елементів */
+}
+
+/* Прибираємо всі відступи у бургер-меню */
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Вирівнювання контактів та соціальних іконок */
+.burger-contacts,
+.burger-social {
+    padding: 3px;
+    margin: 3px;
+}
+
+/* Стилі для вирівнювання іконок */
+.burger-contacts small,
+.burger-social a {
+    display: inline-flex;
+    align-items: center;
+}
+/* Збільшуємо розмір іконок Instagram та TikTok у бургер-меню */
+@media (max-width: 991.98px) {
+    .burger-contacts i {
+        font-size: 24px; /* Збільшуємо розмір іконок */
+    }
+
+    .burger-contacts a {
+        font-size: 24px; /* Збільшуємо розмір іконок */
+        line-height: 1; /* Вирівнюємо іконки */
+    }
+
+    .burger-contacts .fab {
+        margin: 0 8px; /* Відступи між іконками */
+    }
+}
 
 /* Поворот при открытии меню */
 .navbar-toggler.open .navbar-toggler-icon {
