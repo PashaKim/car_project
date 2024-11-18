@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 05:21+0200\n"
+"POT-Creation-Date: 2024-11-18 08:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "Оригинальные и б/у запчасти для любой м�
 #: .\templates\include\contact_model\modal_1.html:45
 #: .\templates\include\contact_model\modal_2.html:44
 #: .\templates\include\contact_model\modal_3.html:40
-#: .\templates\include\navbar.html:72 .\templates\include\upper_service.html:82
+#: .\templates\include\navbar.html:73 .\templates\include\upper_service.html:82
 #: .\templates\include\upper_service.html:100
 #: .\templates\include\upper_service.html:123
 #: .\templates\include\upper_service.html:141
@@ -123,7 +123,7 @@ msgid "Великий склад двигунів, коробок передач
 msgstr "Большой склад двигателей, коробок передач и других запчастей"
 
 #: .\templates\include\footer.html:7 .\templates\include\footer.html:24
-#: .\templates\include\navbar.html:24
+#: .\templates\include\navbar.html:25
 msgid "Контакти"
 msgstr "Контакты"
 
@@ -135,15 +135,15 @@ msgstr "Киев, Бровары, Киевская область"
 msgid "Карта Сайту"
 msgstr "Карта Сайта"
 
-#: .\templates\include\footer.html:21 .\templates\include\navbar.html:21
+#: .\templates\include\footer.html:21 .\templates\include\navbar.html:22
 msgid "Послуги"
 msgstr "Услуги"
 
-#: .\templates\include\footer.html:22 .\templates\include\navbar.html:22
+#: .\templates\include\footer.html:22 .\templates\include\navbar.html:23
 msgid "Приклади робіт"
 msgstr "Примеры работ"
 
-#: .\templates\include\footer.html:23 .\templates\include\navbar.html:23
+#: .\templates\include\footer.html:23 .\templates\include\navbar.html:24
 msgid "Відгуки"
 msgstr "Отзывы"
 
@@ -188,6 +188,10 @@ msgstr ""
 "области. Закупка оригинальных и б/у запчастей. Качественная диагностика и "
 "ремонт для вашего авто."
 
+#: .\templates\include\navbar.html:21
+msgid "Головна"
+msgstr "Главная"
+
 #: .\templates\include\spinner.html:6
 msgid "Завантаження..."
 msgstr "Загрузка..."
@@ -225,8 +229,8 @@ msgid ""
 "1. Ми велика мережа розборок в Україні та Європі, маємо склади в багатьох "
 "містах країни."
 msgstr ""
-"1. Мы — крупная сеть авторазборок в Украине и Европе, со складами в различных "
-"городах страны."
+"1. Мы — крупная сеть авторазборок в Украине и Европе, со складами в "
+"различных городах страны."
 
 #: .\templates\include\upper_service.html:8
 msgid ""
