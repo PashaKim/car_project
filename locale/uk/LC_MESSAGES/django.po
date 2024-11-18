@@ -183,11 +183,11 @@ msgstr ""
 
 #: .\templates\include\testimonial.html:7
 msgid "// Відгуки //"
-msgstr "Отзывы"
+msgstr ""
 
 #: .\templates\include\testimonial.html:8
 msgid "Наші клієнти кажуть про нас:"
-msgstr "Наши клиенты говорят про нас:"
+msgstr ""
 
 #: .\templates\include\upper_facts.html:11
 msgid "Закуплено запчастин"
