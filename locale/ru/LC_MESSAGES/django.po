@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-17 12:51+0200\n"
+"POT-Creation-Date: 2024-11-18 04:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,16 +89,12 @@ msgstr "Название автозапчасти"
 msgid "Додаткова інформація"
 msgstr "Дополнительная информация"
 
-#: .\templates\include\contact_model\modal_3.html:28
-msgid "Ваше місто/село"
-msgstr "Ваш город"
+#: .\templates\include\contact_model\modal_2.html:51
+msgid "Оберіть платформу для зв'язку: "
+msgstr "Выберите платформу для связи:"
 
-#: .\templates\include\contact_model\modal_footer.html:3
-msgid "Або<br> оберіть платформу для зв'язку: "
-msgstr "Или <br> выберите платформу для связи:"
-
+#: .\templates\include\contact_model\modal_2.html:65
 #: .\templates\include\contact_model\modal_footer.html:17
-#: .\templates\include\contact_model\modal_footer2.html:17
 msgid ""
 "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
 "номером: "
@@ -106,11 +102,13 @@ msgstr ""
 "Если Viber или Telegram у вас отсутствует, пожалуйста, позвоните нам за "
 "номером: "
 
-#: .\templates\include\contact_model\modal_footer2.html:3
-#, fuzzy
-#| msgid "Або<br> оберіть платформу для зв'язку: "
-msgid "Оберіть платформу для зв'язку: "
-msgstr "Или <br> выберите платформу для связи:"
+#: .\templates\include\contact_model\modal_3.html:28
+msgid "Ваше місто/село"
+msgstr "Ваш город"
+
+#: .\templates\include\contact_model\modal_footer.html:3
+msgid "Або оберіть платформу для зв'язку: "
+msgstr "Или выберите платформу для связи:"
 
 #: .\templates\include\examples.html:7
 msgid "// Приклади //"
