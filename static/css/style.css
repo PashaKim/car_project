@@ -345,66 +345,44 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-/*** Header ***/
+
+
+/* Общие стили для карусели */
 .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-/* Убираем большие отступы для контейнера */
-.carousel-caption .container-fluid {
-    padding: 0;
-}
-
-/* Mobile adjustments */
+/* Мобильные устройства (до 576px) */
 @media (max-width: 576px) {
-	.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: 1;
-
-}
+    .carousel-inner .col-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Занимаем всю высоту колонки */
+    }
+        .carousel-inner .img-fluid {
+        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
     #header-carousel .carousel-item {
-        min-height: 250px; /* Уменьшенная минимальная высота для карусели */
-        position: relative;
-    }
-
-    #header-carousel .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Заполняет весь контейнер, масштабируя изображение */
-    }
-
-    .carousel-caption {
-        padding: 15px;
-        position: relative;
-        z-index: 1;
+        min-height: 450px; /* Увеличиваем минимальную высоту для карусели */
     }
 
     .carousel-caption h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .carousel-caption h6 {
@@ -412,69 +390,100 @@
         margin-bottom: 10px;
     }
 
+    .carousel-caption img {
+
+        max-width: 80%;
+        height: auto;
+        margin: 15px 0;
+    }
+
     .carousel-caption .btn {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-}
-/* Tablet adjustments */
-@media (min-width: 576px) and (max-width: 768px) {
     .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgba(0, 0, 0, 1);
-    z-index: 1;
-
 }
-	.carousel-caption h1 {
+}
+
+
+/* Планшеты (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .carousel-inner .col-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Занимаем всю высоту колонки */
+    }
+        .carousel-inner .img-fluid {
+        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
+    #header-carousel .carousel-item {
+        min-height: 450px; /* Увеличиваем минимальную высоту для планшетов */
+    }
+
+    .carousel-caption h1 {
         font-size: 1.5rem;
     }
 
     .carousel-caption h6 {
-        font-size: 0.875rem;
-    }
-
-    .carousel-caption .btn {
-        padding: 8px 16px;
-        font-size: 0.875rem;
-    }
-    
-    .carousel-caption {
-        padding: 15px;
-    }
-}
-
-/* Large tablets and small desktops */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: 1;
-
-}
-
-	.carousel-caption h1 {
-        font-size: 1.75rem;
-    }
-
-    .carousel-caption h6 {
         font-size: 1rem;
+    }
+
+    .carousel-caption img {
+        max-width: 70%;
+        height: auto;
+        margin: 20px 0;
+
     }
 
     .carousel-caption .btn {
         padding: 10px 20px;
+        font-size: 0.875rem;
+
+    }
+        .carousel-caption {
+    background: rgba(0, 0, 0, 1);
+}
+}
+
+/* Большие планшеты и маленькие десктопы (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header-carousel .carousel-item {
+        min-height: 450px; /* Увеличиваем минимальную высоту для больших планшетов */
+    }
+        .carousel-inner .img-fluid {
+        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption h6 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption img {
+        max-width: 60%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    .carousel-caption .btn {
+        padding: 12px 24px;
         font-size: 1rem;
     }
-    
-    .carousel-caption .row {
-        margin: 0;
-    }
+        .carousel-caption {
+    background: rgba(0, 0, 0, 1);
 }
+}
+
 
 
 .page-header {
