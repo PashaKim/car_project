@@ -132,3 +132,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+<!-- Перемикання по активним лінкам меню -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarCollapse',
+            offset: 100
+        });
+    });
+</script>
