@@ -661,7 +661,19 @@
     background: var(--primary);
     border-color: var(--primary);
 }
+.testimonial-carousel .testimonial-item {
+    height: 600px; /* Одинаковая высота контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+.testimonial-carousel .testimonial-item img {
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+}
 
 /*** Footer ***/
 .footer {
