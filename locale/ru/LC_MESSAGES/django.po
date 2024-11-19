@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:23+0200\n"
+"POT-Creation-Date: 2024-11-19 17:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,8 +201,14 @@ msgid "// Відгуки //"
 msgstr "// Отзывы //"
 
 #: .\templates\include\testimonial.html:8
-msgid "Наші клієнти кажуть про нас:"
-msgstr "Наши клиенты говорят про нас:"
+msgid "Щасливі клієнти"
+msgstr "Счастливые клиенты"
+
+#: .\templates\include\testimonial.html:37
+#, fuzzy
+#| msgid "Наші клієнти кажуть про нас:"
+msgid "Наші клієнти пишуть"
+msgstr "Наши клиенты пишут"
 
 #: .\templates\include\upper_facts.html:11
 msgid "Закуплено запчастин"

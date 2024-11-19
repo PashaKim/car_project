@@ -662,17 +662,18 @@
     border-color: var(--primary);
 }
 .testimonial-carousel .testimonial-item {
-    height: 600px; /* Одинаковая высота контейнера */
+    height: 600px; /* Фиксированная высота для всех элементов */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; /* Скрывает лишние части за пределами контейнера */
+    background: #fff; /* Добавляет фон, чтобы пустое пространство выглядело аккуратно */
 }
 
 .testimonial-carousel .testimonial-item img {
-    max-height: 100%;
-    width: auto;
-    object-fit: cover;
+    height: 100%; /* Занимает всю высоту контейнера */
+    width: auto; /* Масштабируется по ширине пропорционально высоте */
+    object-fit: contain; /* Уменьшает или увеличивает изображение, чтобы полностью влезло в контейнер */
 }
 
 /*** Footer ***/
