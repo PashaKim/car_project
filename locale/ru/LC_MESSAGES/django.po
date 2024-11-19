@@ -205,8 +205,6 @@ msgid "Щасливі клієнти"
 msgstr "Счастливые клиенты"
 
 #: .\templates\include\testimonial.html:37
-#, fuzzy
-#| msgid "Наші клієнти кажуть про нас:"
 msgid "Наші клієнти пишуть"
 msgstr "Наши клиенты пишут"
 
