@@ -128,7 +128,11 @@
     padding: 3px;
     margin: 3px;
 }
-
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .language-switcher a {
+        font-size: 0.9rem; /* Зменшуємо розмір шрифту */
+    }
+}
 /* Стиль для стрілки на мобільних пристроях */
 .mobile-arrow {
     font-size: 1.2rem;
@@ -319,6 +323,13 @@
         opacity: 1;
     }
 }
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .navbar-brand {
+        margin-right: -105px; /* Зменшуємо відступ до блоку мов */
+                margin-left: -15px; /* Зменшуємо відступ до блоку мов */
+    }
+}
+
 /* Скрыть кнопку "Замовити" на iPad Pro и аналогичных экранах */
 @media (min-width: 992px) and (max-width: 1366px) {
     .navbar .btn-primary {
