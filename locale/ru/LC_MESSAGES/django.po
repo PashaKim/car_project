@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 17:53+0200\n"
+"POT-Creation-Date: 2024-11-19 18:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgid "// Автозапчастини  //"
 msgstr "// Автозапчасти  //"
 
 #: .\templates\include\carousel.html:16
-msgid "Оригінальні та б/у запчастини до будь-якої марки авто"
-msgstr "Оригинальные и б/у запчасти для любой марки авто"
+msgid "Нові та б/у запчастини до будь-якої марки авто"
+msgstr "Новые и б/у запчасти для любой марки авто"
 
 #: .\templates\include\carousel.html:18 .\templates\include\carousel.html:40
 #: .\templates\include\carousel.html:61
