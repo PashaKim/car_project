@@ -2,14 +2,25 @@
 :root {
     --primary: #E7E619;
     --secondary: #0B2154;
-    --light: #F2F2F2;
+    --light: #E8E8E8;
     --dark: #111111;
 }
 
 .fw-medium {
     font-weight: 600 !important;
 }
-
+.text-primary2 {
+    background-color: #E7E619; /* Черная подложка */
+    color: #000; /* Основной цвет текста */
+    padding: 10px 15px; /* Отступы для создания пространства вокруг текста */
+    display: inline-block; /* Чтобы подложка соответствовала длине текста */
+    border-radius: 5px; /* Скругленные углы, если нужно */
+    text-transform: uppercase; /* Текст в верхнем регистре */
+}
+.separator {
+    color: #000; /* Цвет по умолчанию */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -136,7 +147,7 @@
 /* Стиль для стрілки на мобільних пристроях */
 .mobile-arrow {
     font-size: 1.2rem;
-    color: #FFFFFF; /* Чорний колір для стрілки */
+    color: #000; /* Чорний колір для стрілки */
     animation: bounce 1.5s infinite;
     display: none; /* Приховуємо стрілку за замовчуванням */
 }
@@ -225,7 +236,7 @@
 
 /* Білий колір для активних іконок */
 .nav-link.active .icon-default {
-    color: #fff !important;
+    color: #454444;
 }
 .navbar-brand h2 {
     font-family: 'Poppins', sans-serif;
@@ -234,7 +245,7 @@
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
     letter-spacing: 1px; /* Додаємо відступи між літерами */
     line-height: 1.8; /* Встановлюємо висоту рядка на 180% */
-    color: var(--primary); /* Використовуємо основний колір */
+    color: #000; /* Використовуємо основний колір */
 }
 /* Збільшуємо розмір шрифта логотипа на великих екранах */
 @media (min-width: 1080px) {
@@ -575,7 +586,7 @@
 }
 
 .service .nav .nav-link.active h4 {
-    color: #FFFFFF !important;
+    color: #000;
 }
 
 
