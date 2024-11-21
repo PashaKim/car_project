@@ -31,7 +31,15 @@
 <!-- JavaScript для відправки форми -->
 <script>
     function saveForm(formName) {
-        document.getElementById(formName).addEventListener('submit', function (e) {
+        const formElement = document.getElementById(formName);
+
+        // Перевірка на існування елемента
+        if (!formElement) {
+            console.warn(`Форма з id '${formName}' не знайдена на цій сторінці.`);
+            return;
+        }
+
+        formElement.addEventListener('submit', function (e) {
             e.preventDefault(); // Блокуємо стандартне відправлення форми
 
             // Збираємо дані форми
@@ -58,9 +66,10 @@
         });
     }
 
-    saveForm('orderForm1')
-    saveForm('orderForm2')
-    saveForm('orderForm3')
+    // Викликаємо функцію для кожної форми
+    saveForm('orderForm1');
+    saveForm('orderForm2');
+    saveForm('orderForm3');
 </script>
 <!-- Бургер-меню -->
 <script>
