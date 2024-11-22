@@ -384,7 +384,7 @@
     padding: 20px;
 }
 /* Стили для изображения carousel-555 */
-.carousel-inner img[src*="carousel-555.png"] {
+.carousel-inner img[src*="carousel-555.webp"] {
     max-width: 80%;
     max-height: 60vh;
     object-fit: contain;
@@ -431,11 +431,11 @@
     .carousel-caption {
     background: rgba(0, 0, 0, 1);
 }
-    .carousel-inner img[src*="carousel-23.png"] {
+    .carousel-inner img[src*="carousel-23.webp"] {
         max-width: 100%; /* Увеличиваем ширину до 90% */
         max-height: 100vh; /* Увеличиваем высоту до 80% экрана */
     }
-        .carousel-inner img[src*="carousel-111.png"] {
+        .carousel-inner img[src*="carousel-111.webp"] {
         max-width: 120%; /* Увеличиваем ширину до 90% */
         max-height: 120vh; /* Увеличиваем высоту до 80% экрана */
     }
@@ -483,12 +483,12 @@
         .carousel-caption {
     background: rgba(0, 0, 0, 1);
 }
-    .carousel-inner img[src*="carousel-111.png"],
-    .carousel-inner img[src*="carousel-23.png"] {
+    .carousel-inner img[src*="carousel-111.webp"],
+    .carousel-inner img[src*="carousel-23.webp"] {
         max-width: 90%; /* Увеличиваем ширину до 90% */
         max-height: 80vh; /* Увеличиваем высоту до 80% экрана */
     }
-    .carousel-inner img[src*="carousel-555.png"] {
+    .carousel-inner img[src*="carousel-555.webp"] {
         max-width: 60%; /* Увеличиваем ширину до 90% */
         max-height: 40vh; /* Увеличиваем высоту до 80% экрана */
 
@@ -527,12 +527,12 @@
         .carousel-caption {
     background: rgba(0, 0, 0, 1);
 }
-    .carousel-inner img[src*="carousel-111.png"],
-    .carousel-inner img[src*="carousel-23.png"] {
+    .carousel-inner img[src*="carousel-111.webp"],
+    .carousel-inner img[src*="carousel-23.webp"] {
         max-width: 90%; /* Увеличиваем ширину до 90% */
         max-height: 80vh; /* Увеличиваем высоту до 80% экрана */
     }
-    .carousel-inner img[src*="carousel-555.png"] {
+    .carousel-inner img[src*="carousel-555.webp"] {
         max-width: 60%; /* Увеличиваем ширину до 90% */
         max-height: 40vh; /* Увеличиваем высоту до 80% экрана */
 
@@ -568,7 +568,7 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/motors.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/motors.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
