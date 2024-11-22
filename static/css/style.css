@@ -16,7 +16,7 @@
     display: inline-block; /* Чтобы подложка соответствовала длине текста */
     border-radius: 5px; /* Скругленные углы, если нужно */
     text-transform: uppercase; /* Текст в верхнем регистре */
-        font-size: 1.2rem; /* Розмір тексту */
+        font-size: 1rem; /* Розмір тексту */
 }
 .separator {
     color: #000; /* Цвет по умолчанию */
@@ -369,20 +369,93 @@
     margin-bottom: 50px;
 }
 
+.container-fluid {
+    background-color: #000; /* Фон контейнера */
+    width: 100%;
 
-/* Общие стили для карусели */
+    overflow: hidden;
+}
+.carousel-inner {
+    width: 100%;
+    height: 660px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; /* Сховати всі слайди */
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active {
+    display: block; /* Показати лише активний слайд */
+}
+.carousel-caption h1,
+.carousel-caption img {
+ opacity: 0;
+    transform: translateY(-100px) scale(0.9); /* Начальная позиция с уменьшением масштаба */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Быстрая анимация */
+}
+/* Начальная позиция для изображений */
+.carousel-caption img {
+    opacity: 0;
+    transform: translateY(-100px) scale(0); /* Начальная позиция выше и с нулевым масштабом */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+.carousel-bg {
+    position: absolute;
+    top: 20px; /* Регулируйте отступ сверху */
+    left: 50%;
+    transform: translateX(-50%); /* Центруем по горизонтали */
+    max-width: 30%; /* Уменьшаем ширину в 2 раза (было 60%) */
+    height: auto; /* Пропорциональная высота */
+    z-index: 10; /* Ставим поверх карусели */
+    opacity: 0.7; /* Прозрачность 70% */
+    pointer-events: none; /* Чтобы не блокировать клики */
+}
+
+/* Когда слайд активен */
+.carousel-item.active .carousel-caption img {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Возвращаем в центр с нормальным масштабом */
+}
+.carousel-item.active .carousel-caption h1,
+.carousel-item.active .carousel-caption img {
+    opacity: 1;
+    transform: translateY(0); /* Возвращаем в центр */
+}
+.carousel-item-next,
+.carousel-item-prev {
+    display: block; /* Показываем следующий/предыдущий слайд для анимации */
+    z-index: 1; /* Устанавливаем ниже активного */
+    transform: translateX(100%); /* По умолчанию следующий слайд справа */
+}
+.carousel-item-prev {
+    transform: translateX(-100%); /* Предыдущий слайд слева */
+}
+
+/* Анимация появления слайда */
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateX(0); /* Возвращаем в центр */
+}
+
+
 .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-  background-color: #000; /* Черный цвет */
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+       z-index: 1;
 }
 /* Стили для изображения carousel-555 */
 .carousel-inner img[src*="carousel-555.webp"] {
@@ -392,11 +465,20 @@
 }
 /* Мобильные устройства (до 576px) */
 @media (max-width: 576px) {
+.carousel-inner {
+    width: 100%;
+    height: 450px; /* Задаємо висоту каруселі */
+}
+.carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
+
+}
     .carousel-inner .col-6 {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%; /* Занимаем всю высоту колонки */
+        height: 40%; /* Занимаем всю высоту колонки */
     }
         .carousel-inner .img-fluid {
         max-height: 70%; /* Ограничиваем максимальную высоту изображения */
@@ -449,10 +531,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%; /* Занимаем всю высоту колонки */
+        height: 40%; /* Занимаем всю высоту колонки */
     }
+    .carousel-inner {
+    width: 100%;
+    height: 550px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+.carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
+
+}
         .carousel-inner .img-fluid {
-        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        max-height: 40%; /* Ограничиваем максимальную высоту изображения */
         height: auto;
         width: auto;
         margin: 25px auto;
@@ -497,18 +589,28 @@
 }
 
 /* Большие планшеты и маленькие десктопы (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1022px) {
     #header-carousel .carousel-item {
-        min-height: 500px; /* Увеличиваем минимальную высоту для больших планшетов */
+        min-height: 400px; /* Увеличиваем минимальную высоту для больших планшетов */
     }
+    .carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
+
+}
+    .carousel-inner {
+    width: 100%;
+    height: 550px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
         .carousel-inner .img-fluid {
-        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        max-height: 40%; /* Ограничиваем максимальную высоту изображения */
         height: auto;
         width: auto;
         margin: 25px auto;
     }
     .carousel-caption h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .carousel-caption h6 {
@@ -539,8 +641,20 @@
 
     }
 }
-
-
+/* Маленькие десктопы (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #header-carousel .carousel-item {
+        min-height: 400px; /* Увеличиваем минимальную высоту для больших планшетов */
+    }
+    .carousel-inner {
+    width: 100%;
+    height: 450px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+}
 
 .page-header {
     background-position: center center;
@@ -701,7 +815,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/footer.webp) center center no-repeat;
     background-size: cover;
 }
 
