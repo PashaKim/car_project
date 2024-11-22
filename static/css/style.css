@@ -16,6 +16,7 @@
     display: inline-block; /* Чтобы подложка соответствовала длине текста */
     border-radius: 5px; /* Скругленные углы, если нужно */
     text-transform: uppercase; /* Текст в верхнем регистре */
+        font-size: 1.2rem; /* Розмір тексту */
 }
 .separator {
     color: #000; /* Цвет по умолчанию */
