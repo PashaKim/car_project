@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import redirect
+from django.shortcuts import redirect, render
 from django.utils.translation import get_language
 from django.views import View
 from django.views.generic import TemplateView
@@ -40,3 +40,11 @@ class CustomerRequestFormView(View):
 
 def redirect_main(request):
     return redirect('/')
+
+
+def handler404(request, exception=None):
+    return render(request, '404.html')
+
+
+def handler500(request, exception=None):
+    return render(request, '500.html')

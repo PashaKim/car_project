@@ -1,0 +1,22 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>404</title>
+    {% include "include/meta.html" %}
+    {% include "include/links.html" %}
+</head>
+<body>
+<!-- Контейнер для 404 -->
+<div class="container-xxl service py-5 text-center">
+    <div class="container">
+        <h1 class="text-primary2 display-1">{% translate "404" %}</h1>
+        <h4 class="mb-4">{% translate "На жаль, сторінку не знайдено" %}</h4>
+        <p class="mb-5">{% translate "Сторінка, яку ви шукаєте, можливо, була переміщена або ніколи не існувала." %}</p>
+        <a href="/" class="btn btn-primary py-3 px-5">{% translate "Повернутися на головну" %}</a>
+    </div>
+</div>
+</body>
+</html>

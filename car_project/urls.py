@@ -21,7 +21,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
-from main.views import LandingView, CustomerRequestFormView, redirect_main
+from main.views import LandingView, CustomerRequestFormView, redirect_main, handler404, handler500
+
+
+handler404 = handler404
+handler500 = handler500
 
 urlpatterns = [
     path("uk/", redirect_main, name='main'),
