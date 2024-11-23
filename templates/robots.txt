@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /hidden/
+Allow: /
+
+Sitemap: https://autopodbor007.com.ua/sitemap.xml
