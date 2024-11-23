@@ -1,5 +1,6 @@
+{% load i18n %}
 <div class="modal-header justify-content-center">
-    <h5 class="modal-title text-center" id="contactModalLabel">Або<br> оберіть платформу для зв'язку:</h5>
+    <h5 class="modal-title text-center" id="contactModalLabel">{% trans "Або оберіть платформу для зв'язку: "%} </h5>
 </div>
 <div class="modal-body d-flex justify-content-center gap-5 p-4">
     <a href="{{ telegram_value }}" target="_blank" class="btn py-3 px-4 text-white"
@@ -12,6 +13,6 @@
     </a>
 </div>
 <div class="modal-footer justify-content-center">
-    <p class="text-center m-0">Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за
-        номером: {{ phone_value }}</p>
+    <p class="text-center m-0">
+        {% trans "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за номером: "%} {{ phone_value }} </p>
 </div>

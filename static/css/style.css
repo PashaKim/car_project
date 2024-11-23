@@ -2,14 +2,34 @@
 :root {
     --primary: #E7E619;
     --secondary: #0B2154;
-    --light: #F2F2F2;
+    --light: #E8E8E8;
     --dark: #111111;
 }
 
 .fw-medium {
     font-weight: 600 !important;
 }
+.text-primary2 {
+    background-color: #E7E619; /* Черная подложка */
+    color: #000; /* Основной цвет текста */
+    padding: 10px 15px; /* Отступы для создания пространства вокруг текста */
+    display: inline-block; /* Чтобы подложка соответствовала длине текста */
+    border-radius: 5px; /* Скругленные углы, если нужно */
+    text-transform: uppercase; /* Текст в верхнем регистре */
+        font-size: 1rem; /* Розмір тексту */
+}
+/* Уменьшаем размер текста для мобильных устройств */
+@media (max-width: 576px) {
+    h4.mb-5 {
+        font-size: 1rem; /* Установите желаемый размер текста */
+        line-height: 1.4; /* Настройте межстрочный интервал для читаемости */
 
+    }
+}
+.separator {
+    color: #000; /* Цвет по умолчанию */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -96,7 +116,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #F0F0F0;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -105,10 +125,107 @@
 .navbar-toggler-icon {
     transition: transform 0.3s ease;
 }
+/* Вирівнювання контактів та соціальних іконок у бургер-меню */
+.burger-contacts,
+.burger-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Відступи між елементами */
+    flex-wrap: nowrap; /* Запобігаємо переносу елементів */
+}
+
+/* Прибираємо всі відступи у бургер-меню */
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Вирівнювання контактів та соціальних іконок */
+.burger-contacts,
+.burger-social {
+    padding: 3px;
+    margin: 3px;
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .language-switcher a {
+        font-size: 0.9rem; /* Зменшуємо розмір шрифту */
+    }
+}
+/* Стиль для стрілки на мобільних пристроях */
+.mobile-arrow {
+    font-size: 1.2rem;
+    color: #000; /* Чорний колір для стрілки */
+    animation: bounce 1.5s infinite;
+    display: none; /* Приховуємо стрілку за замовчуванням */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+/* настроили внешний вид знака + */
+.plus-sign {
+    margin-left: 5px;
+    color: #fff; /* Белый цвет для знака плюс */
+    font-size: 1.2em; /* Размер знака плюс */
+    line-height: 1; /* Убираем дополнительное пространство */
+    vertical-align: baseline; /* Выровнять по базовой линии цифр */
+}
+
+/* Відображаємо стрілку для активної кнопки */
+.nav-link.active .mobile-arrow {
+    display: inline-block;
+}
+
+
+/* Відображаємо стрілку тільки для активної кнопки */
+.nav-link.active .mobile-arrow {
+    display: inline-block;
+}
+
+
+/* Стилі для вирівнювання іконок */
+.burger-contacts small,
+.burger-social a {
+    display: inline-flex;
+    align-items: center;
+}
+/* Збільшуємо розмір іконок Instagram та TikTok у бургер-меню */
+@media (max-width: 991.98px) {
+    .burger-contacts i {
+        font-size: 24px; /* Збільшуємо розмір іконок */
+    }
+
+    .burger-contacts a {
+        font-size: 24px; /* Збільшуємо розмір іконок */
+        line-height: 1; /* Вирівнюємо іконки */
+    }
+
+    .burger-contacts .fab {
+        margin: 0 8px; /* Відступи між іконками */
+    }
+}
 
 /* Поворот при открытии меню */
 .navbar-toggler.open .navbar-toggler-icon {
     transform: rotate(45deg);
+}
+@media (min-width: 1022px) {
+    .navbar-collapse {
+        padding-left: 40px; /* Відступ зліва для навбару */
+        padding-right: 40px; /* Відступ справа для симетрії */
+    }
+
+    .navbar-nav,
+    .h-100.d-flex {
+        justify-content: flex-start; /* Вирівнюємо контент по лівому краю */
+    }
 }
 
 /* Стиль для активных и наведенных ссылок */
@@ -128,7 +245,58 @@
 
 /* Білий колір для активних іконок */
 .nav-link.active .icon-default {
-    color: #fff !important;
+    color: #454444;
+}
+.navbar-brand h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Робимо текст напівжирним, як у меню */
+    text-transform: uppercase; /* Застосовуємо заглавні літери */
+    font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
+    letter-spacing: 1px; /* Додаємо відступи між літерами */
+    line-height: 1.8; /* Встановлюємо висоту рядка на 180% */
+    color: #000; /* Використовуємо основний колір */
+}
+/* Збільшуємо розмір шрифта логотипа на великих екранах */
+@media (min-width: 1080px) {
+    .navbar-brand h2 {
+        font-size: 1.5rem; /* Збільшуємо розмір шрифта */
+        letter-spacing: 1.5px; /* Збільшуємо відступи між літерами для кращого вигляду */
+    }
+}
+/* Мобильные устройства (до 576px) */
+@media (max-width: 576px) {
+	 .navbar-brand img {
+        height: 50px; /* Увеличиваем высоту логотипа */
+        min-width: 70px; /* Минимальная ширина логотипа */
+    }
+
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        padding: 0 10px; /* Уменьшаем отступы по бокам */
+        font-size: 0.85rem; /* Уменьшаем размер текста */
+    }
+
+    .navbar-brand img {
+        max-width: 30px; /* Уменьшаем размер логотипа */
+        height: auto;
+    }
+
+    .navbar-brand .text-logo {
+        font-size: 0.85rem; /* Уменьшаем размер текста логотипа */
+        margin-left: 5px; /* Уменьшаем отступ между логотипом и текстом */
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        margin-left: auto;
+    }
+
+    .navbar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -175,6 +343,13 @@
         opacity: 1;
     }
 }
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .navbar-brand {
+        margin-right: -105px; /* Зменшуємо відступ до блоку мов */
+                margin-left: -15px; /* Зменшуємо відступ до блоку мов */
+    }
+}
+
 /* Скрыть кнопку "Замовити" на iPad Pro и аналогичных экранах */
 @media (min-width: 992px) and (max-width: 1366px) {
     .navbar .btn-primary {
@@ -201,66 +376,131 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-/*** Header ***/
+
+.container-fluid {
+    background-color: #000; /* Фон контейнера */
+    width: 100%;
+
+    overflow: hidden;
+}
+.carousel-inner {
+    width: 100%;
+    height: 660px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; /* Сховати всі слайди */
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active {
+    display: block; /* Показати лише активний слайд */
+}
+.carousel-caption h1,
+.carousel-caption img {
+ opacity: 0;
+    transform: translateY(-100px) scale(0.9); /* Начальная позиция с уменьшением масштаба */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Быстрая анимация */
+}
+/* Начальная позиция для изображений */
+.carousel-caption img {
+    opacity: 0;
+    transform: translateY(-100px) scale(0); /* Начальная позиция выше и с нулевым масштабом */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+.carousel-bg {
+    position: absolute;
+    top: 20px; /* Регулируйте отступ сверху */
+    left: 50%;
+    transform: translateX(-50%); /* Центруем по горизонтали */
+    max-width: 30%; /* Уменьшаем ширину в 2 раза (было 60%) */
+    height: auto; /* Пропорциональная высота */
+    z-index: 10; /* Ставим поверх карусели */
+    opacity: 0.7; /* Прозрачность 70% */
+    pointer-events: none; /* Чтобы не блокировать клики */
+}
+
+/* Когда слайд активен */
+.carousel-item.active .carousel-caption img {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Возвращаем в центр с нормальным масштабом */
+}
+.carousel-item.active .carousel-caption h1,
+.carousel-item.active .carousel-caption img {
+    opacity: 1;
+    transform: translateY(0); /* Возвращаем в центр */
+}
+.carousel-item-next,
+.carousel-item-prev {
+    display: block; /* Показываем следующий/предыдущий слайд для анимации */
+    z-index: 1; /* Устанавливаем ниже активного */
+    transform: translateX(100%); /* По умолчанию следующий слайд справа */
+}
+.carousel-item-prev {
+    transform: translateX(-100%); /* Предыдущий слайд слева */
+}
+
+/* Анимация появления слайда */
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateX(0); /* Возвращаем в центр */
+}
+
+
 .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: 1;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       z-index: 1;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
+/* Стили для изображения carousel-555 */
+.carousel-inner img[src*="carousel-555.webp"] {
+    max-width: 80%;
+    max-height: 60vh;
+    object-fit: contain;
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-/* Убираем большие отступы для контейнера */
-.carousel-caption .container-fluid {
-    padding: 0;
-}
-
-/* Mobile adjustments */
+/* Мобильные устройства (до 576px) */
 @media (max-width: 576px) {
-	.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: 1;
+.carousel-inner {
+    width: 100%;
+    height: 450px; /* Задаємо висоту каруселі */
+}
+.carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
 
 }
+    .carousel-inner .col-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40%; /* Занимаем всю высоту колонки */
+    }
+        .carousel-inner .img-fluid {
+        max-height: 70%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
     #header-carousel .carousel-item {
-        min-height: 250px; /* Уменьшенная минимальная высота для карусели */
-        position: relative;
-    }
-
-    #header-carousel .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Заполняет весь контейнер, масштабируя изображение */
-    }
-
-    .carousel-caption {
-        padding: 15px;
-        position: relative;
-        z-index: 1;
+        min-height: 450px; /* Увеличиваем минимальную высоту для карусели */
     }
 
     .carousel-caption h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .carousel-caption h6 {
@@ -268,70 +508,161 @@
         margin-bottom: 10px;
     }
 
+    .carousel-caption img {
+
+        max-width: 80%;
+        height: auto;
+        margin: 15px 0;
+    }
+
     .carousel-caption .btn {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-}
-/* Tablet adjustments */
-@media (min-width: 576px) and (max-width: 768px) {
     .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgba(0, 0, 0, 1);
-    z-index: 1;
+}
+    .carousel-inner img[src*="carousel-23.webp"] {
+        max-width: 100%; /* Увеличиваем ширину до 90% */
+        max-height: 100vh; /* Увеличиваем высоту до 80% экрана */
+    }
+        .carousel-inner img[src*="carousel-111.webp"] {
+        max-width: 120%; /* Увеличиваем ширину до 90% */
+        max-height: 120vh; /* Увеличиваем высоту до 80% экрана */
+    }
+}
+
+
+/* Планшеты (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .carousel-inner .col-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40%; /* Занимаем всю высоту колонки */
+    }
+    .carousel-inner {
+    width: 100%;
+    height: 550px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+.carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
 
 }
-	.carousel-caption h1 {
+        .carousel-inner .img-fluid {
+        max-height: 40%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
+    #header-carousel .carousel-item {
+        min-height: 450px; /* Увеличиваем минимальную высоту для планшетов */
+    }
+
+    .carousel-caption h1 {
         font-size: 1.5rem;
     }
 
     .carousel-caption h6 {
-        font-size: 0.875rem;
-    }
-
-    .carousel-caption .btn {
-        padding: 8px 16px;
-        font-size: 0.875rem;
-    }
-    
-    .carousel-caption {
-        padding: 15px;
-    }
-}
-
-/* Large tablets and small desktops */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: 1;
-
-}
-
-	.carousel-caption h1 {
-        font-size: 1.75rem;
-    }
-
-    .carousel-caption h6 {
         font-size: 1rem;
+    }
+
+    .carousel-caption img {
+        max-width: 70%;
+        height: auto;
+        margin: 20px 0;
+
     }
 
     .carousel-caption .btn {
         padding: 10px 20px;
-        font-size: 1rem;
+        font-size: 0.875rem;
+
     }
-    
-    .carousel-caption .row {
-        margin: 0;
+        .carousel-caption {
+    background: rgba(0, 0, 0, 1);
+}
+    .carousel-inner img[src*="carousel-111.webp"],
+    .carousel-inner img[src*="carousel-23.webp"] {
+        max-width: 90%; /* Увеличиваем ширину до 90% */
+        max-height: 80vh; /* Увеличиваем высоту до 80% экрана */
+    }
+    .carousel-inner img[src*="carousel-555.webp"] {
+        max-width: 60%; /* Увеличиваем ширину до 90% */
+        max-height: 40vh; /* Увеличиваем высоту до 80% экрана */
+
     }
 }
 
+/* Большие планшеты и маленькие десктопы (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1022px) {
+    #header-carousel .carousel-item {
+        min-height: 400px; /* Увеличиваем минимальную высоту для больших планшетов */
+    }
+    .carousel-bg {
+
+    opacity: 0; /* Прозрачность 70% */
+
+}
+    .carousel-inner {
+    width: 100%;
+    height: 550px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+        .carousel-inner .img-fluid {
+        max-height: 40%; /* Ограничиваем максимальную высоту изображения */
+        height: auto;
+        width: auto;
+        margin: 25px auto;
+    }
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption h6 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption img {
+        max-width: 60%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    .carousel-caption .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+        .carousel-caption {
+    background: rgba(0, 0, 0, 1);
+}
+    .carousel-inner img[src*="carousel-111.webp"],
+    .carousel-inner img[src*="carousel-23.webp"] {
+        max-width: 90%; /* Увеличиваем ширину до 90% */
+        max-height: 80vh; /* Увеличиваем высоту до 80% экрана */
+    }
+    .carousel-inner img[src*="carousel-555.webp"] {
+        max-width: 60%; /* Увеличиваем ширину до 90% */
+        max-height: 40vh; /* Увеличиваем высоту до 80% экрана */
+
+    }
+}
+/* Маленькие десктопы (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #header-carousel .carousel-item {
+        min-height: 400px; /* Увеличиваем минимальную высоту для больших планшетов */
+    }
+    .carousel-inner {
+    width: 100%;
+    height: 450px; /* Задаємо висоту каруселі */
+    overflow: hidden;
+}
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+}
 
 .page-header {
     background-position: center center;
@@ -360,7 +691,7 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/motors.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/motors.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +709,7 @@
 }
 
 .service .nav .nav-link.active h4 {
-    color: #FFFFFF !important;
+    color: #000;
 }
 
 
@@ -475,11 +806,24 @@
     background: var(--primary);
     border-color: var(--primary);
 }
+.testimonial-carousel .testimonial-item {
+    height: 600px; /* Фиксированная высота для всех элементов */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Скрывает лишние части за пределами контейнера */
+    background: #fff; /* Добавляет фон, чтобы пустое пространство выглядело аккуратно */
+}
 
+.testimonial-carousel .testimonial-item img {
+    height: 100%; /* Занимает всю высоту контейнера */
+    width: auto; /* Масштабируется по ширине пропорционально высоте */
+    object-fit: contain; /* Уменьшает или увеличивает изображение, чтобы полностью влезло в контейнер */
+}
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/footer.webp) center center no-repeat;
     background-size: cover;
 }
 

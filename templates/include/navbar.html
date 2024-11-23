@@ -3,8 +3,8 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
     <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <img src="{% static 'img/logo.png' %}" alt="autopodbor_007" style="height: 40px; width: auto;" class="me-3">
-        <h2 class="m-0 text-primary">autopodbor_007</h2>
+        <img src="{% static 'img/logo.webp' %}" alt="{% translate 'лого_autopodbor_007' %}" style="height: 40px; width: auto;" class="me-3">
+        <h2 class="m-0 text-dark">autopodbor_007</h2>
     </a>
     <button
             class="navbar-toggler me-4"
@@ -12,20 +12,55 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
             aria-expanded="false"
+            aria-label="Відкрити/Закрити меню"
     >
         <!-- Бургер-иконка (которую заменим на крестик при открытии) -->
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="#services" class="nav-item nav-link active">{% translate "Послуги" %}</a>
+            <a href="#header-carousel" class="nav-item nav-link active">{% translate "Головна" %}</a>
+            <a href="#services" class="nav-item nav-link">{% translate "Послуги" %}</a>
             <a href="#examples" class="nav-item nav-link">{% translate "Приклади робіт" %}</a>
             <a href="#reviews" class="nav-item nav-link">{% translate "Відгуки" %}</a>
             <a href="#contacts" class="nav-item nav-link">{% translate "Контакти" %}</a>
         </div>
-        <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal"
-           data-bs-target="#contactModal">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i>
+
+<!-- Контакти та соціальні іконки у бургер-меню -->
+<div class="d-lg-none burger-menu-content text-center p-0 no-padding">
+    <!-- Контакти -->
+    <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
+        <small class="fab fa-viber text-primary me-2"></small>
+        <small class="fab fa-telegram text-primary me-2"></small>
+        <small class="fa fa-phone-alt text-primary me-2"></small>
+        <small class="text-dark">+38 (068) 821 80 07</small>
+    </div>
+        <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
+                <a class=" text-primary me-1" target="_blank" href="https://www.instagram.com/autopodbor_007/" aria-label="Look more about autopodbor_007 in Instagram">
+            <i class="fab fa-instagram"></i>
         </a>
+        <a class=" text-primary me-1" target="_blank" href="https://www.tiktok.com/@autopodbor_007" aria-label="Look more about autopodbor_007 in TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+</div>
+
+                <!-- Перемикач мов -->
+<div class="h-100 d-flex align-items-center justify-content-center py-2">
+    {% for language in languages %}
+        <a href="/{{ language }}/"
+           {% if language == language_code %}
+           class="text-primary2 me-2"
+           {% else %}
+           class="text-dark me-2"
+           {% endif %}>
+            {% if language == "uk" %} UA {% else %} {{ language|upper }} {% endif %}
+        </a>
+        {% if not forloop.last %}
+            <span class="mx-1 separator">|</span>
+        {% endif %}
+    {% endfor %}
+</div>
     </div>
 </nav>
 <!-- Navbar End -->

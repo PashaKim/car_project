@@ -1,18 +1,17 @@
 {% load static %}
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{% static 'lib/wow/wow.min.js' %}"></script>
-<script src="{% static 'lib/easing/easing.min.js' %}"></script>
-<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
-<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="{% static 'lib/wow/wow.min.js' %}" ></script>
+<script src="{% static 'lib/easing/easing.min.js' %}" ></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}" ></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}" ></script>
 <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
 <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
-<script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
-<script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
-
+<script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}" ></script>
+<script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}" ></script>
 <!-- Відкриття модального вікна по кнопці -->
-<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/main.js' %}" ></script>
 <script>
     function closeModal(modalId) {
         document.querySelectorAll('.modal a').forEach(button => {
@@ -31,7 +30,15 @@
 <!-- JavaScript для відправки форми -->
 <script>
     function saveForm(formName) {
-        document.getElementById(formName).addEventListener('submit', function (e) {
+        const formElement = document.getElementById(formName);
+
+        // Перевірка на існування елемента
+        if (!formElement) {
+            console.warn(`Форма з id '${formName}' не знайдена на цій сторінці.`);
+            return;
+        }
+
+        formElement.addEventListener('submit', function (e) {
             e.preventDefault(); // Блокуємо стандартне відправлення форми
 
             // Збираємо дані форми
@@ -58,19 +65,43 @@
         });
     }
 
-    saveForm('orderForm1')
-    saveForm('orderForm2')
-    saveForm('orderForm3')
+    // Викликаємо функцію для кожної форми
+    saveForm('orderForm1');
+    saveForm('orderForm2');
+    saveForm('orderForm3');
 </script>
+<!-- Бургер-меню -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const navbarToggler = document.querySelector(".navbar-toggler");
         const navbarCollapse = document.querySelector("#navbarCollapse");
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-        navbarToggler.addEventListener("click", function () {
-            navbarToggler.classList.toggle("open");
+        // Закриття бургер-меню після натискання на посилання
+        navLinks.forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = 80; // Відступ від верхньої частини
+
+                // Закриваємо меню бургер
+                if (navbarCollapse.classList.contains("show")) {
+                    const bootstrapCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bootstrapCollapse.hide();
+                }
+
+                // Додаємо затримку перед скролом
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }, 300); // Затримка у 300 мс
+            });
         });
 
+        // Видаляємо клас 'open' з іконки бургер-меню після закриття меню
         navbarCollapse.addEventListener("hidden.bs.collapse", function () {
             navbarToggler.classList.remove("open");
         });
@@ -79,19 +110,51 @@
         });
     });
 </script>
+<!-- Автоскролл на мобильных к контенту блока про услуги -->
+<script >
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll('[data-bs-toggle="pill"]');
 
+    tabButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            if (window.innerWidth < 768) { // Тільки для мобільних пристроїв
+                // Прибираємо стрілки з усіх кнопок
+                tabButtons.forEach(btn => {
+                    const arrow = btn.querySelector(".mobile-arrow");
+                    if (arrow) {
+                        arrow.style.display = "none";
+                    }
+                });
+
+                // Показуємо стрілку тільки біля активної кнопки
+                const activeArrow = this.querySelector(".mobile-arrow");
+                if (activeArrow) {
+                    activeArrow.style.display = "inline-block";
+                }
+
+                // Прокручуємо до активного блоку
+                const targetPane = document.querySelector(this.getAttribute("data-bs-target"));
+                targetPane.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
+</script >
+<!-- Перемикання по активним лінкам меню -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-        navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-                // Убираем класс 'active' со всех ссылок
-                navLinks.forEach(link => link.classList.remove("active"));
-
-                // Добавляем класс 'active' только к нажатой ссылке
-                this.classList.add("active");
-            });
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarCollapse',
+            offset: 100
         });
     });
 </script>
+<!-- Відкладіть завантаження скриптів, які не потрібні для першого рендеру -->
+<script>
+    window.addEventListener('load', function () {
+        const script = document.createElement('script');
+        script.src = "{% static 'lib/wow/wow.min.js' %}";
+        document.body.appendChild(script);
+    });
+</script>
+
