@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 12:03+0200\n"
+"POT-Creation-Date: 2024-11-23 21:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,23 @@ msgstr ""
 "11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: .\templates\404.html:15 .\templates\500.html:15
+msgid "404"
+msgstr ""
+
+#: .\templates\404.html:16 .\templates\500.html:16
+msgid "На жаль, сторінку не знайдено"
+msgstr ""
+
+#: .\templates\404.html:17 .\templates\500.html:17
+msgid ""
+"Сторінка, яку ви шукаєте, можливо, була переміщена або ніколи не існувала."
+msgstr ""
+
+#: .\templates\404.html:18 .\templates\500.html:18
+msgid "Повернутися на головну"
+msgstr ""
 
 #: .\templates\include\carousel.html:17
 msgid "// Автозапчастини  //"
@@ -188,8 +205,8 @@ msgstr ""
 
 #: .\templates\include\meta.html:17
 msgid ""
-"Отримайте найкращі послуги з автопідбору, закупівля автозапчастин та викупу "
-"авто."
+"Отримайте найкращі послуги з автопідбору, закупівлі запчастин та термінового "
+"викупу авто."
 msgstr ""
 
 #: .\templates\include\navbar.html:6
@@ -224,18 +241,12 @@ msgstr ""
 msgid "Автовикуп"
 msgstr ""
 
-#: .\templates\include\services.html:58 .\templates\include\services.html:135
+#: .\templates\include\services.html:58
 msgid "Консультації по авто"
 msgstr ""
 
 #: .\templates\include\services.html:69
 msgid "Нові оригінальні та б/у запчастини"
-msgstr ""
-
-#: .\templates\include\services.html:73
-msgid ""
-"Ми велика мережа розборок в Україні та Європі маємо склади в багатьох містах "
-"країни "
 msgstr ""
 
 #: .\templates\include\services.html:74
@@ -282,10 +293,6 @@ msgstr ""
 msgid "Підбір двигунів та коробок передач під ваше авто"
 msgstr ""
 
-#: .\templates\include\services.html:94
-msgid "Підбір та замовлення двигуна"
-msgstr ""
-
 #: .\templates\include\services.html:95
 msgid ""
 "Наші спеціалісти надають професійні послуги з пошуку та підбору двигунів та "
@@ -311,11 +318,6 @@ msgstr ""
 
 #: .\templates\include\services.html:108
 msgid "Оцінка та викуп авто"
-msgstr ""
-
-#: .\templates\include\services.html:112
-msgid ""
-"Терміновий (швидкий) викуп авто в Броварах та інших містах України та Європи "
 msgstr ""
 
 #: .\templates\include\services.html:113
