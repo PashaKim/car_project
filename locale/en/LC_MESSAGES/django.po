@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 18:06+0200\n"
+"POT-Creation-Date: 2024-11-23 11:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,40 +18,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\include\carousel.html:15
+#: .\templates\include\carousel.html:17
 msgid "// Автозапчастини  //"
 msgstr ""
 
-#: .\templates\include\carousel.html:16
+#: .\templates\include\carousel.html:18
 msgid "Нові та б/у запчастини до будь-якої марки авто"
 msgstr ""
 
-#: .\templates\include\carousel.html:18 .\templates\include\carousel.html:40
-#: .\templates\include\carousel.html:61
+#: .\templates\include\carousel.html:20 .\templates\include\carousel.html:43
+#: .\templates\include\carousel.html:65
 #: .\templates\include\contact_model\modal_1.html:45
 #: .\templates\include\contact_model\modal_2.html:44
 #: .\templates\include\contact_model\modal_3.html:40
-#: .\templates\include\navbar.html:73 .\templates\include\upper_service.html:82
+#: .\templates\include\upper_service.html:82
 #: .\templates\include\upper_service.html:100
 #: .\templates\include\upper_service.html:123
 #: .\templates\include\upper_service.html:141
 msgid "Замовити"
 msgstr ""
 
-#: .\templates\include\carousel.html:37
+#: .\templates\include\carousel.html:40
 msgid "// Автопослуги //"
 msgstr ""
 
-#: .\templates\include\carousel.html:38
+#: .\templates\include\carousel.html:41
 #: .\templates\include\upper_service.html:34
 msgid "Замовлення і підбір двигунів та коробок передач"
 msgstr ""
 
-#: .\templates\include\carousel.html:58
+#: .\templates\include\carousel.html:62
 msgid "// Автовикуп //"
 msgstr ""
 
-#: .\templates\include\carousel.html:59
+#: .\templates\include\carousel.html:63
 msgid "Терміновий (швидкий) викуп авто"
 msgstr ""
 
@@ -89,11 +89,11 @@ msgstr ""
 msgid "Додаткова інформація"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:51
+#: .\templates\include\contact_model\modal_2.html:52
 msgid "Оберіть платформу для зв'язку: "
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:65
+#: .\templates\include\contact_model\modal_2.html:66
 #: .\templates\include\contact_model\modal_footer.html:17
 msgid ""
 "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
@@ -116,12 +116,12 @@ msgstr ""
 msgid "Підбір запчастин та закупівля нашим клієнтам"
 msgstr ""
 
-#: .\templates\include\examples.html:35
+#: .\templates\include\examples.html:39
 msgid "Великий склад двигунів, коробок передач та інших запчастин"
 msgstr ""
 
 #: .\templates\include\footer.html:7 .\templates\include\footer.html:24
-#: .\templates\include\navbar.html:25
+#: .\templates\include\navbar.html:26
 msgid "Контакти"
 msgstr ""
 
@@ -133,48 +133,53 @@ msgstr ""
 msgid "Карта Сайту"
 msgstr ""
 
-#: .\templates\include\footer.html:21 .\templates\include\navbar.html:22
+#: .\templates\include\footer.html:21 .\templates\include\navbar.html:23
 msgid "Послуги"
 msgstr ""
 
-#: .\templates\include\footer.html:22 .\templates\include\navbar.html:23
+#: .\templates\include\footer.html:22 .\templates\include\navbar.html:24
 msgid "Приклади робіт"
 msgstr ""
 
-#: .\templates\include\footer.html:23 .\templates\include\navbar.html:24
+#: .\templates\include\footer.html:23 .\templates\include\navbar.html:25
 msgid "Відгуки"
 msgstr ""
 
-#: .\templates\include\meta.html:5
+#: .\templates\include\meta.html:6
 msgid ""
-"ремонт автомобілів, підбір автомобілів, технічне обслуговування авто, "
-"діагностика авто, автосервіс, оригінальні запчастини, бу запчастини, "
-"запчастини для авто, запчастини для авто, заміна масла, ремонт гальм, ремонт "
-"двигуна, діагностика автомобілів, автосервіс Київ, автосервіс Бровари, "
-"автомеханік"
+"автопідбір, викуп авто, запчастини, двигуни, коробки передач, консультації "
+"авто, авто Україна, продаж авто"
 msgstr ""
 
 #: .\templates\include\meta.html:7
 msgid ""
-"Професійний підбір автомобілів та технічне обслуговування в Києві та "
-"області. Надаємо надійну діагностику авто, ремонт та регулярне ТО. "
-"Пропонуємо закупівлю оригінальних і б/у запчастин. Звертайтеся до нас за "
-"якісними послугами автосервісу та запчастинами."
+"Ми надаємо професійні послуги з підбору автозапчастин, двигунів та коробок "
+"передач. Швидкий викуп авто та консультації з ремонту."
 msgstr ""
 
 #: .\templates\include\meta.html:9
 msgid ""
-"Підбір автомобілів, проведення ТО та закупівля оригінальних і б/у запчастин"
+"Професійний автопідбір, закупівля автозапчастин та консультації | "
+"AutoPodbor007"
 msgstr ""
 
-#: .\templates\include\meta.html:11
+#: .\templates\include\meta.html:10
 msgid ""
-"Професійний підбір автомобілів та технічне обслуговування в Києві та "
-"області. Закупівля оригінальних і б/у запчастин. Якісна діагностика та "
-"ремонт для вашого авто."
+"Швидкий викуп авто, підбір нових і б/у запчастин, консультації з ремонту та "
+"експлуатації автомобілів."
 msgstr ""
 
-#: .\templates\include\navbar.html:21
+#: .\templates\include\meta.html:16
+msgid "AutoPodbor007 | Автопідбір, автозапчастини та викуп авто"
+msgstr ""
+
+#: .\templates\include\meta.html:17
+msgid ""
+"Отримайте найкращі послуги з автопідбору, закупівля автозапчастин та викупу "
+"авто."
+msgstr ""
+
+#: .\templates\include\navbar.html:22
 msgid "Головна"
 msgstr ""
 
