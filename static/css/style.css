@@ -498,7 +498,7 @@
         min-height: 450px; /* Увеличиваем минимальную высоту для карусели */
     }
 
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
@@ -561,7 +561,7 @@
         min-height: 450px; /* Увеличиваем минимальную высоту для планшетов */
     }
 
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 1.5rem;
     }
 
@@ -617,7 +617,7 @@
         width: auto;
         margin: 25px auto;
     }
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 2rem;
     }
 
@@ -659,7 +659,7 @@
     height: 450px; /* Задаємо висоту каруселі */
     overflow: hidden;
 }
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 1.75rem;
     }
 }

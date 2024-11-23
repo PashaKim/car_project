@@ -21,7 +21,6 @@
             });
         });
     }
-
     closeModal('#contactModal1')
     closeModal('#contactModal2')
     closeModal('#contactModal3')
@@ -31,13 +30,11 @@
 <script>
     function saveForm(formName) {
         const formElement = document.getElementById(formName);
-
         // Перевірка на існування елемента
         if (!formElement) {
             console.warn(`Форма з id '${formName}' не знайдена на цій сторінці.`);
             return;
         }
-
         formElement.addEventListener('submit', function (e) {
             e.preventDefault(); // Блокуємо стандартне відправлення форми
 
@@ -64,7 +61,6 @@
                 });
         });
     }
-
     // Викликаємо функцію для кожної форми
     saveForm('orderForm1');
     saveForm('orderForm2');
@@ -76,7 +72,6 @@
         const navbarToggler = document.querySelector(".navbar-toggler");
         const navbarCollapse = document.querySelector("#navbarCollapse");
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
         // Закриття бургер-меню після натискання на посилання
         navLinks.forEach(link => {
             link.addEventListener("click", function(e) {
@@ -84,13 +79,11 @@
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
                 const offset = 80; // Відступ від верхньої частини
-
                 // Закриваємо меню бургер
                 if (navbarCollapse.classList.contains("show")) {
                     const bootstrapCollapse = new bootstrap.Collapse(navbarCollapse);
                     bootstrapCollapse.hide();
                 }
-
                 // Додаємо затримку перед скролом
                 setTimeout(() => {
                     window.scrollTo({
@@ -100,7 +93,6 @@
                 }, 300); // Затримка у 300 мс
             });
         });
-
         // Видаляємо клас 'open' з іконки бургер-меню після закриття меню
         navbarCollapse.addEventListener("hidden.bs.collapse", function () {
             navbarToggler.classList.remove("open");
@@ -125,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         arrow.style.display = "none";
                     }
                 });
-
                 // Показуємо стрілку тільки біля активної кнопки
                 const activeArrow = this.querySelector(".mobile-arrow");
                 if (activeArrow) {
