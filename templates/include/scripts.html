@@ -1,15 +1,12 @@
 {% load static %}
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
 <script src="{% static 'lib/wow/wow.min.js' %}" ></script>
 <script src="{% static 'lib/easing/easing.min.js' %}" ></script>
 <script src="{% static 'lib/waypoints/waypoints.min.js' %}" ></script>
 <script src="{% static 'lib/counterup/counterup.min.js' %}" ></script>
 <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
-<script src="{% static 'lib/tempusdominus/js/moment.min.js' %}" defer></script>
-<script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}" ></script>
-<script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}" ></script>
 <!-- Відкриття модального вікна по кнопці -->
 <script src="{% static 'js/main.js' %}" defer></script>
 <script defer>
@@ -148,5 +145,26 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.appendChild(script);
     });
 </script>
+<script>
+$(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+        items: 3, // Количество отображаемых элементов на экране
+        loop: true, // Бесконечный цикл
+        autoplay: true, // Автопроигрывание
+        autoplayTimeout: 5000, // Задержка 5 секунд
+        dots: true, // Включить точки навигации
+        dotsEach: false, // Убедиться, что точки соответствуют каждому элементу
+        dotsData: true, // Принудительно создать точку для каждого элемента
+        margin: 10, // Отступ между элементами
+        slideBy: 1, // Сдвигать карусель на 1 элемент при переключении
+        responsive: {
+            0: { items: 1, slideBy: 1 }, // На мобильных: 1 элемент, сдвиг на 1
+            576: { items: 2, slideBy: 1 }, // На планшетах: 2 элемента, сдвиг на 1
+            992: { items: 3, slideBy: 1 } // На десктопах: 3 элемента, сдвиг на 1
+        }
+    });
+});
+</script>
+
 
 

@@ -7,45 +7,45 @@
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
-       url('/fonts/Roboto-Regular.woff') format('woff');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+/* Общий стиль для логотипа */
+.logo-img {
+    height: auto; /* Сохраняет пропорции */
+    max-width: 80%; /* Не превышает ширину контейнера */
+}
 
+/* Десктопы (широкий экран) */
+@media (min-width: 1200px) {
+    .logo-img {
+        max-width: 130px; /* Размер логотипа на больших экранах */
+    }
+}
 
-/* Общие стили для всех SVG-иконок */
-svg {
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo-img {
+        max-width: 120px; /* Размер логотипа на планшетах */
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 767px) {
+    .logo-img {
+        max-width: 80px; /* Размер логотипа на мобильных */
+    }
+}
+.icon {
     display: inline-block;
-    width: 18px; /* Установим ширину */
-    height: 18px; /* Установим высоту */
-    fill: currentColor; /* Наследуем цвет текста */
-    vertical-align: middle; /* Выравнивание по центру текста */
-}
-.btn .material-icons {
-    vertical-align: middle; /* Выравнивает иконку относительно текста */
-    line-height: 1; /* Убирает лишние отступы */
-    margin-top: -2px; /* Подстройка для идеального выравнивания */
-}
-/* Уникальный класс для иконок в Topbar */
-.svg-icon {
-    width: 18px; /* Ширина для Topbar */
-    height: 18px; /* Высота для Topbar */
-    margin-right: 8px; /* Отступ справа */
-    fill: var(--primary); /* Используем основной цвет */
-}
-
-/* Устанавливаем цвет для определенных состояний */
-.svg-icon:hover {
-    fill: var(--secondary); /* Изменяем цвет при наведении */
-}
-/* Hover эффекты */
-.nav-link:hover .material-icons {
-    color: var(--primary); /* Меняем цвет на hover */
-}
-.nav-link.active .material-icons {
-    color: #454444; /* Цвет для активной ссылки */
+    width: 18px;
+    height: 18px;
+    fill: #E7E619; /* Устанавливает цвет заполнения */
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 body, p, h1 {
@@ -315,11 +315,11 @@ p.mb-5 {
 }
 .navbar-brand h2 {
     font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 1200; /* Робимо текст напівжирним, як у меню */
+    font-weight: 2500; /* Робимо текст напівжирним, як у меню */
     text-transform: uppercase; /* Застосовуємо заглавні літери */
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
     letter-spacing: 1px; /* Додаємо відступи між літерами */
-    line-height: 1.8; /* Встановлюємо висоту рядка на 180% */
+    line-height: 1; /* Встановлюємо висоту рядка на 180% */
     color: #000; /* Використовуємо основний колір */
 }
 /* Встановлюємо шрифт для меню */
@@ -906,7 +906,9 @@ p.mb-5 {
     border: 1px solid #CCCCCC;
     transition: .5s;
 }
-
+    .owl-dots .owl-dot span {
+        display: none; /* Скрыть текст точек */
+    }
 .testimonial-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
