@@ -5,6 +5,21 @@
     --light: #E8E8E8;
     --dark: #111111;
 }
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("{% static 'fonts/ubuntu-regular.ttf' %}") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("{% static 'fonts/ubuntu-bold.ttf' %}") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 .fw-medium {
     font-weight: 600 !important;
@@ -21,9 +36,10 @@
 /* Уменьшаем размер текста для мобильных устройств */
 @media (max-width: 576px) {
     p.mb-5 {
-        font-size: 1rem; /* Установите желаемый размер текста */
-        line-height: 1.4; /* Настройте межстрочный интервал для читаемости */
-
+        font-size: 0.9rem; /* Менший розмір для тексту */
+        line-height: 1.3; /* Менший міжстроковий інтервал */
+        margin-bottom: 10px; /* Зменшений нижній відступ */
+        font-family: 'Ubuntu';
     }
 }
 .separator {
@@ -248,7 +264,7 @@
     color: #454444;
 }
 .navbar-brand h2 {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 600; /* Робимо текст напівжирним, як у меню */
     text-transform: uppercase; /* Застосовуємо заглавні літери */
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
