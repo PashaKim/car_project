@@ -5,69 +5,8 @@
     --light: #E8E8E8;
     --dark: #111111;
 }
-/* Основные стили для Material Icons */
-.material-icons {
-    font-family: 'Material Icons', Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Базовый размер */
-    line-height: 1; /* Высота строки для выравнивания */
-    display: inline-block;
-    vertical-align: middle; /* Выравнивание по вертикали */
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased; /* Уменьшение шрифта для четкости */
-    -moz-osx-font-smoothing: grayscale; /* Сглаживание для macOS */
-}
 
-/* Размеры иконок (аналог fa-classes) */
-.material-icons.md-18 {
-    font-size: 18px;
-}
-.material-icons.md-24 {
-    font-size: 24px; /* Стандартный размер */
-}
-.material-icons.md-36 {
-    font-size: 36px;
-}
-.material-icons.md-48 {
-    font-size: 48px;
-}
 
-/* Цвета */
-.material-icons.text-success {
-    color: #28a745; /* Зеленый для успешных иконок */
-}
-.material-icons.text-danger {
-    color: #dc3545; /* Красный для ошибок */
-}
-.material-icons.text-warning {
-    color: #ffc107; /* Желтый для предупреждений */
-}
-.material-icons.text-primary {
-    color: var(--primary); /* Основной цвет */
-}
-.material-icons.text-secondary {
-    color: var(--secondary); /* Вторичный цвет */
-}
-
-/* Отступы для иконок (аналог me-3 и ms-auto) */
-.material-icons.me-3 {
-    margin-right: 1rem; /* Правый отступ */
-}
-.material-icons.ms-auto {
-    margin-left: auto; /* Левый отступ */
-}
-
-/* Выравнивание стрелок */
-.mobile-arrow {
-    font-size: 24px;
-    color: #000;
-    animation: bounce 1.5s infinite; /* Анимация, как была ранее */
-}
 /* Общие стили для всех SVG-иконок */
 svg {
     display: inline-block;
@@ -123,7 +62,7 @@ p {
     font-weight: 500 !important; /* Немного увеличиваем жирность текста */
     line-height: 1.5 !important; /* Межстрочный интервал для читаемости */
     font-size: 1rem !important; /* Размер текста */
-    font-family:  Arial, sans-serif !important; /* Используем выбранный шрифт */
+    font-family: 'Roboto', Arial, sans-serif !important; /* Используем выбранный шрифт */
 }
 .col-md-6 p {
     margin-bottom: 20px !important; /* Увеличенный отступ между абзацами */
@@ -186,13 +125,13 @@ p.mb-5 {
     font-weight: 600;
     text-transform: uppercase;
     transition: .5s;
-        font-family:  Arial, sans-serif !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #000;
-        font-family: Arial, sans-serif !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
 }
 
 .btn-square {
@@ -226,7 +165,7 @@ p.mb-5 {
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -367,7 +306,7 @@ p.mb-5 {
     color: #454444;
 }
 .navbar-brand h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 1200; /* Робимо текст напівжирним, як у меню */
     text-transform: uppercase; /* Застосовуємо заглавні літери */
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
@@ -377,13 +316,13 @@ p.mb-5 {
 }
 /* Встановлюємо шрифт для меню */
 .navbar, .navbar-brand, .navbar-nav .nav-link, .burger-contacts, .burger-social a {
-    font-family: Arial, sans-serif; /* Шрифт Ubuntu */
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700; /* Полужирный стиль */
     font-size: 1rem; /* Базовий розмір тексту */
 }
 /* Бургер-меню */
 .burger-contacts, .burger-social a {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 0.9rem;
 }
 /* Збільшуємо розмір шрифта логотипа на великих екранах */
@@ -448,7 +387,7 @@ p.mb-5 {
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 1500;
-      font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .navbar-light.sticky-top {
