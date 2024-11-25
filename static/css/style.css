@@ -102,7 +102,7 @@ svg {
 }
 
 body, p, h1 {
-    font-family: Arial, sans-serif !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
 }
 .fw-medium {
     font-weight: 600 !important;
