@@ -5,12 +5,12 @@
     <div class="container">
         <div class="text-center" data-wow-delay="0.1s">
             <h1 class="text-primary2 text-uppercase" aria-level="2">{% translate "// ПОСЛУГИ //" %}</h1>
-           <p class="mb-5">
+          <!-- <p class="mb-5">
     {% translate "1. Ми велика мережа розборок в Україні та Європі, маємо склади в багатьох містах країни." %}
 </p>
 <p class="mb-5">
     {% translate "2. Терміновий (швидкий) викуп авто в Броварах та інших містах України та Європи" %}
-</p>
+</p> -->
         </div>
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-4">
@@ -23,7 +23,7 @@
                             role="tab"
                             aria-controls="tab-pane-1"
                             aria-selected="false">
-                        <i class="fa fa-box-open fa-2x me-3 icon-default"></i>
+                        <span class="material-icons me-3">inventory</span>
                         <h4 class="m-0">{% translate "Замовлення нових запчастин" %}</h4>
                         <i class="fa fa-arrow-down ms-auto mobile-arrow d-lg-none"></i>
                     </button>
@@ -35,7 +35,7 @@
                             role="tab"
                             aria-controls="tab-pane-2"
                             aria-selected="true">
-                        <i class="fa fa-cogs fa-2x me-3 icon-default"></i>
+                         <span class="material-icons me-3">build</span>
                         <h4 class="m-0">{% translate "Замовлення і підбір двигунів та коробок передач" %}</h4>
                         <i class="fa fa-arrow-down ms-auto mobile-arrow d-lg-none"></i>
                     </button>
@@ -47,7 +47,7 @@
                             role="tab"
                             aria-controls="tab-pane-3"
                             aria-selected="true">
-                        <i class="fa fa-car fa-2x me-3 icon-default"></i>
+                        <span class="material-icons me-3">directions_car</span>
                         <h4 class="m-0">{% translate "Автовикуп" %}</h4>
                         <i class="fa fa-arrow-down ms-auto mobile-arrow d-lg-none"></i>
                     </button>
@@ -59,7 +59,7 @@
                             role="tab"
                             aria-controls="tab-pane-4"
                             aria-selected="true">
-                        <i class="fa fa-comments fa-2x me-3 icon-default"></i>
+                        <span class="material-icons me-3">chat</span>
                         <h4 class="m-0">{% translate "Консультації по авто" %}</h4>
                         <i class="fa fa-arrow-down ms-auto mobile-arrow d-lg-none"></i>
                     </button>
@@ -79,11 +79,11 @@
                                 <p class="mb-4">{% translate "Нові оригінальні запчастини та їх бюджетні аналоги, вживані запчастини в гарному стані для будь-якої марки авто по приємним цінам, а головне з можливістю знижок при наступному замовленні у нас " %}</p>
                                 <p class="mb-4">{% translate "Двигуни, коробки передач, кузовні деталі та інші запчастини з гарантією від нашої мережі " %}</p>
                                 <div class="price-badge mb-3">{% translate "Гарантуємо якість та порядність угоди " %}</div>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Термін доставки поштою по Україні  1-2 дні (відправка в день замовлення) " %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Термін доставки перевізниками з Європи 10-14 днів " %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія на вживані запчастини 14-30 днів (залежить від запчастини) " %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія на нові 3-6 місяців (залежить від запчастини)" %}</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Термін доставки поштою по Україні  1-2 дні (відправка в день замовлення) " %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Термін доставки перевізниками з Європи 10-14 днів " %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Гарантія на вживані запчастини 14-30 днів (залежить від запчастини) " %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Гарантія на нові 3-6 місяців (залежить від запчастини)" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<span class="material-icons ms-3 align-middle" style="font-size: 20px;">arrow_forward</span></a>
                             </div>
                         </div>
                     </div>
@@ -97,10 +97,10 @@
                             <div class="col-md-6">
                                 <p class="mb-4">{% translate "Наші спеціалісти надають професійні послуги з пошуку та підбору двигунів та коробок передач під ваше авто. Взаємодіємо з великою базою як нових так і б/у агрегатів з доступом до їх складів" %}</p>
                                 <div class="price-badge mb-3">{% translate "Вартість: $XXХ (Залежить від авто)" %}</div>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Висока кваліфікація фахівців" %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Високоточне обладнання" %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Гарантія на виконані роботи" %}</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Висока кваліфікація фахівців" %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Високоточне обладнання" %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Гарантія на виконані роботи" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<span class="material-icons ms-3 align-middle" style="font-size: 20px;">arrow_forward</span></a>
                             </div>
                         </div>
                     </div>
@@ -118,11 +118,11 @@
                                 <p class="mb-4">{% translate "Для того щоб ми придбали Ваше авто,  ціна має бути нижче ринкової вартості автомобілі по цінам з сайтів не розглянемо для купівлі, можливий лише комісійний продаж (під нашого клієнта) обговоримо це індивідуально" %}</p>
                                 <div class="price-badge mb-3">{% translate "Можливість оцінки авто по фото та короткому опису, без Вашого приїзду." %}</div>
                                 <b><p class="mb-2">{% translate "Гарантуємо:" %}</p></b>
-                                <p><i class="fa fa-check text-success me-2"></i>{% translate "Лояльність та порядність з нашого боку до клієнта " %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Чистоту в юридичних питаннях " %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Швидку оцінку транспортного засобу (по фото-відео та короткому опису)" %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Швидкий розрахунок на місці  " %}</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal3" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Лояльність та порядність з нашого боку до клієнта " %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Чистоту в юридичних питаннях " %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Швидку оцінку транспортного засобу (по фото-відео та короткому опису)" %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Швидкий розрахунок на місці  " %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<span class="material-icons ms-3 align-middle" style="font-size: 20px;">arrow_forward</span></a>
                             </div>
                         </div>
                     </div>
@@ -136,10 +136,10 @@
                             <div class="col-md-6">
                                 <p class="mb-4">{% translate "Наша команда експертів надає консультації з будь-яких питань, пов'язаних з вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти оптимальні рішення для вашого авто.." %}</p>
                                 <div class="price-badge mb-3">{% translate "Безкоштовно!" %}</div>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Висока кваліфікація фахівців" %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Індивідуальний підхід" %}</p>
-                                <p><i class="fa fa-check text-success me-3"></i>{% translate "Підтримка на всіх етапах" %}</p>
-                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal2" style="border-radius: 5px;">{% translate "Замовити" %}<i class="fa fa-arrow-right ms-3"></i></a>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Висока кваліфікація фахівців" %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Індивідуальний підхід" %}</p>
+                                <p><span class="material-icons text-success me-3">check</span>{% translate "Підтримка на всіх етапах" %}</p>
+                                <a href="#" class="btn btn-primary py-4 px-lg-5 d-block" data-bs-toggle="modal" data-bs-target="#contactModal" style="border-radius: 5px;">{% translate "Замовити" %}<span class="material-icons ms-3 align-middle" style="font-size: 20px;">arrow_forward</span></a>
                             </div>
                         </div>
                     </div>

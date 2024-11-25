@@ -26,40 +26,42 @@
             <a href="#contacts" class="nav-item nav-link">{% translate "Контакти" %}</a>
         </div>
 
-<!-- Контакти та соціальні іконки у бургер-меню -->
-<div class="d-lg-none burger-menu-content text-center p-0 no-padding">
-    <!-- Контакти -->
-    <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
-        <small class="fab fa-viber text-primary me-2"></small>
-        <small class="fab fa-telegram text-primary me-2"></small>
-        <small class="fa fa-phone-alt text-primary me-2"></small>
-        <small class="text-dark">+38 (068) 821 80 07</small>
-    </div>
-        <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
-                <a class=" text-primary me-1" target="_blank" href="https://www.instagram.com/autopodbor_007/" aria-label="Look more about autopodbor_007 in Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a class=" text-primary me-1" target="_blank" href="https://www.tiktok.com/@autopodbor_007" aria-label="Look more about autopodbor_007 in TikTok">
-            <i class="fab fa-tiktok"></i>
-        </a>
-    </div>
-</div>
-                <!-- Перемикач мов -->
-<div class="h-100 d-flex align-items-center justify-content-center py-2">
-    {% for language in languages %}
-        <a href="/{{ language }}/"
-           {% if language == language_code %}
-           class="text-primary2 me-2"
-           {% else %}
-           class="text-dark me-2"
-           {% endif %}>
-            {% if language == "uk" %} UA {% else %} {{ language|upper }} {% endif %}
-        </a>
-        {% if not forloop.last %}
-            <span class="mx-1 separator">|</span>
-        {% endif %}
-    {% endfor %}
-</div>
+        <!-- Контакти та соціальні іконки у бургер-меню -->
+        <div class="d-lg-none burger-menu-content text-center p-0 no-padding">
+            <!-- Контакти -->
+            <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
+                <span class="material-icons text-primary me-2" style="font-size: 18px;">chat</span>
+                <span class="material-icons text-primary me-2" style="font-size: 18px;">send</span>
+                <span class="material-icons text-primary me-2" style="font-size: 18px;">phone</span>
+                <small class="text-dark">+38 (068) 821 80 07</small>
+            </div>
+            <!-- Соціальні іконки -->
+            <div class="burger-contacts d-flex justify-content-center align-items-center mb-2">
+                <a class="text-primary me-1" target="_blank" href="https://www.instagram.com/autopodbor_007/" aria-label="Look more about autopodbor_007 in Instagram">
+                    <span class="material-icons" style="font-size: 18px;">photo_camera</span>
+                </a>
+                <a class="text-primary me-1" target="_blank" href="https://www.tiktok.com/@autopodbor_007" aria-label="Look more about autopodbor_007 in TikTok">
+                    <span class="material-icons" style="font-size: 18px;">movie</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Перемикач мов -->
+        <div class="h-100 d-flex align-items-center justify-content-center py-2">
+            {% for language in languages %}
+                <a href="/{{ language }}/"
+                   {% if language == language_code %}
+                   class="text-primary2 me-2"
+                   {% else %}
+                   class="text-dark me-2"
+                   {% endif %}>
+                    {% if language == "uk" %} UA {% else %} {{ language|upper }} {% endif %}
+                </a>
+                {% if not forloop.last %}
+                    <span class="mx-1 separator">|</span>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </nav>
 <!-- Navbar End -->

@@ -5,6 +5,101 @@
     --light: #E8E8E8;
     --dark: #111111;
 }
+/* Основные стили для Material Icons */
+.material-icons {
+    font-family: 'Material Icons', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Базовый размер */
+    line-height: 1; /* Высота строки для выравнивания */
+    display: inline-block;
+    vertical-align: middle; /* Выравнивание по вертикали */
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased; /* Уменьшение шрифта для четкости */
+    -moz-osx-font-smoothing: grayscale; /* Сглаживание для macOS */
+}
+
+/* Размеры иконок (аналог fa-classes) */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px; /* Стандартный размер */
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Цвета */
+.material-icons.text-success {
+    color: #28a745; /* Зеленый для успешных иконок */
+}
+.material-icons.text-danger {
+    color: #dc3545; /* Красный для ошибок */
+}
+.material-icons.text-warning {
+    color: #ffc107; /* Желтый для предупреждений */
+}
+.material-icons.text-primary {
+    color: var(--primary); /* Основной цвет */
+}
+.material-icons.text-secondary {
+    color: var(--secondary); /* Вторичный цвет */
+}
+
+/* Отступы для иконок (аналог me-3 и ms-auto) */
+.material-icons.me-3 {
+    margin-right: 1rem; /* Правый отступ */
+}
+.material-icons.ms-auto {
+    margin-left: auto; /* Левый отступ */
+}
+
+/* Выравнивание стрелок */
+.mobile-arrow {
+    font-size: 24px;
+    color: #000;
+    animation: bounce 1.5s infinite; /* Анимация, как была ранее */
+}
+/* Общие стили для всех SVG-иконок */
+svg {
+    display: inline-block;
+    width: 18px; /* Установим ширину */
+    height: 18px; /* Установим высоту */
+    fill: currentColor; /* Наследуем цвет текста */
+    vertical-align: middle; /* Выравнивание по центру текста */
+}
+.btn .material-icons {
+    vertical-align: middle; /* Выравнивает иконку относительно текста */
+    line-height: 1; /* Убирает лишние отступы */
+    margin-top: -2px; /* Подстройка для идеального выравнивания */
+}
+/* Уникальный класс для иконок в Topbar */
+.svg-icon {
+    width: 18px; /* Ширина для Topbar */
+    height: 18px; /* Высота для Topbar */
+    margin-right: 8px; /* Отступ справа */
+    fill: var(--primary); /* Используем основной цвет */
+}
+
+/* Устанавливаем цвет для определенных состояний */
+.svg-icon:hover {
+    fill: var(--secondary); /* Изменяем цвет при наведении */
+}
+/* Hover эффекты */
+.nav-link:hover .material-icons {
+    color: var(--primary); /* Меняем цвет на hover */
+}
+.nav-link.active .material-icons {
+    color: #454444; /* Цвет для активной ссылки */
+}
 
 body, p, h1 {
     font-family: Arial, sans-serif !important;
