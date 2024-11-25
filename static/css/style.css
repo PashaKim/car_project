@@ -712,7 +712,18 @@
     color: #000;
 }
 
-
+.service-image {
+    width: 100%; /* Ширина соответствует родительскому элементу */
+    height: 500px; /* Устанавливаем одинаковую высоту для всех */
+    object-fit: cover; /* Изображение масштабируется без искажений */
+    object-position: center; /* Центрируем изображение внутри области */
+    border-radius: 5px; /* По желанию: добавьте закругленные углы */
+}
+@media (max-width: 768px) {
+    .service-image {
+        height: 300px; /* Уменьшенная высота для мобильных */
+    }
+}
 /*** Booking ***/
 .booking {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
