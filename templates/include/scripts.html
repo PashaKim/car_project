@@ -11,8 +11,8 @@
 <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}" ></script>
 <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}" ></script>
 <!-- Відкриття модального вікна по кнопці -->
-<script src="{% static 'js/main.js' %}" ></script>
-<script>
+<script src="{% static 'js/main.js' %}" defer></script>
+<script defer>
     function closeModal(modalId) {
         document.querySelectorAll('.modal a').forEach(button => {
             button.addEventListener('click', () => {
@@ -27,7 +27,7 @@
 
 </script>
 <!-- JavaScript для відправки форми -->
-<script>
+<script defer>
     function saveForm(formName) {
         const formElement = document.getElementById(formName);
         // Перевірка на існування елемента
@@ -148,4 +148,5 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.appendChild(script);
     });
 </script>
+
 

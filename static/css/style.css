@@ -248,7 +248,7 @@
     color: #454444;
 }
 .navbar-brand h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600; /* Робимо текст напівжирним, як у меню */
     text-transform: uppercase; /* Застосовуємо заглавні літери */
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
@@ -901,3 +901,4 @@
     padding-right: 0;
     border-right: none;
 }
+

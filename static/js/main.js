@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,14 +24,14 @@
             $('.sticky-top').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
     const showClass = "show";
-    
+
     $(window).on("load resize", function() {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
@@ -52,8 +52,8 @@
             $dropdown.off("mouseenter mouseleave");
         }
     });
-    
-    
+
+
 	// Back to top button
 	$(document).ready(function () {
 		$('.back-to-top').hide(); // скрыть кнопку при загрузке страницы
@@ -110,6 +110,6 @@
             }
         }
     });
-    
+
 })(jQuery);
 
