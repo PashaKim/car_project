@@ -140,6 +140,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 </script>
-
+<!-- Відкладіть завантаження скриптів, які не потрібні для першого рендеру -->
+<script>
+    window.addEventListener('load', function () {
+        const script = document.createElement('script');
+        script.src = "{% static 'lib/wow/wow.min.js' %}";
+        document.body.appendChild(script);
+    });
+</script>
 
 
