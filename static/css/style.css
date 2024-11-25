@@ -5,6 +5,14 @@
     --light: #E8E8E8;
     --dark: #111111;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-regular.woff2') format('woff2'),
+       url('/fonts/roboto-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 /* Общие стили для всех SVG-иконок */
