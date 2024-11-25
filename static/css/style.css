@@ -5,14 +5,9 @@
     --light: #E8E8E8;
     --dark: #111111;
 }
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('https://autopodbor007.com.ua/static/fonts/Ubuntu-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
+
 body, p, h1 {
-    font-family: 'Ubuntu', Arial, sans-serif !important;
+    font-family: Arial, sans-serif !important;
 }
 .fw-medium {
     font-weight: 600 !important;
@@ -33,7 +28,7 @@ p {
     font-weight: 500 !important; /* Немного увеличиваем жирность текста */
     line-height: 1.5 !important; /* Межстрочный интервал для читаемости */
     font-size: 1rem !important; /* Размер текста */
-    font-family: 'Ubuntu', Arial, sans-serif !important; /* Используем выбранный шрифт */
+    font-family:  Arial, sans-serif !important; /* Используем выбранный шрифт */
 }
 .col-md-6 p {
     margin-bottom: 20px !important; /* Увеличенный отступ между абзацами */
@@ -96,13 +91,13 @@ p.mb-5 {
     font-weight: 600;
     text-transform: uppercase;
     transition: .5s;
-        font-family: 'Ubuntu', Arial, sans-serif !important;
+        font-family:  Arial, sans-serif !important;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #000;
-        font-family: 'Ubuntu', Arial, sans-serif !important;
+        font-family: Arial, sans-serif !important;
 }
 
 .btn-square {
@@ -136,7 +131,7 @@ p.mb-5 {
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -277,7 +272,7 @@ p.mb-5 {
     color: #454444;
 }
 .navbar-brand h2 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 1200; /* Робимо текст напівжирним, як у меню */
     text-transform: uppercase; /* Застосовуємо заглавні літери */
     font-size: 1.1rem; /* Налаштовуємо розмір тексту для відповідного вигляду */
@@ -287,13 +282,13 @@ p.mb-5 {
 }
 /* Встановлюємо шрифт для меню */
 .navbar, .navbar-brand, .navbar-nav .nav-link, .burger-contacts, .burger-social a {
-    font-family: 'Ubuntu', Arial, sans-serif; /* Шрифт Ubuntu */
+    font-family: Arial, sans-serif; /* Шрифт Ubuntu */
     font-weight: 700; /* Полужирный стиль */
     font-size: 1rem; /* Базовий розмір тексту */
 }
 /* Бургер-меню */
 .burger-contacts, .burger-social a {
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 0.9rem;
 }
 /* Збільшуємо розмір шрифта логотипа на великих екранах */
@@ -358,7 +353,7 @@ p.mb-5 {
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 1500;
-        font-family: 'Ubuntu', Arial, sans-serif;
+      font-family: Arial, sans-serif;
 }
 
 .navbar-light.sticky-top {
