@@ -7,12 +7,13 @@
 }
 @font-face {
     font-family: 'Ubuntu';
-    src: url("{% static 'fonts/Ubuntu-Regular.ttf' %}") format('ttf');
+    src: url('https://autopodbor007.com.ua/static/fonts/Ubuntu-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
-
+body, p, h1 {
+    font-family: 'Ubuntu', Arial, sans-serif !important;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
