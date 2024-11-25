@@ -346,7 +346,17 @@ p.mb-5 {
         height: 50px; /* Увеличиваем высоту логотипа */
         min-width: 70px; /* Минимальная ширина логотипа */
     }
-
+    .navbar-brand h2 {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 700; /* Уменьшаем жирность для экономии ресурсов */
+        text-transform: uppercase; /* Оставляем заглавные буквы */
+        font-size: 0.9rem; /* Уменьшаем размер текста */
+        letter-spacing: 0.5px; /* Снижаем межбуквенные интервалы */
+        line-height: 1.4; /* Уменьшаем высоту строки */
+        color: #000; /* Основной цвет */
+        margin: 0; /* Убираем отступы, если они заданы */
+        padding: 0; /* Убираем лишние внутренние отступы */
+    }
 
     .navbar-brand {
         display: flex;
