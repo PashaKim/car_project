@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tabButtons.forEach(button => {
         button.addEventListener("click", function () {
-            if (window.innerWidth < 768) { // Тільки для мобільних пристроїв
+            if (window.innerWidth < 912) { // Тільки для мобільних пристроїв
                 // Прибираємо стрілки з усіх кнопок
                 tabButtons.forEach(btn => {
                     const arrow = btn.querySelector(".mobile-arrow");
