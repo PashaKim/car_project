@@ -5,43 +5,41 @@
         <div class="modal-content">
             <!-- Кнопка закриття модального вікна -->
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body d-flex justify-content-center gap-5 p-4" style="background: #F2F2F2">
+            <div class="modal-body d-flex justify-content-center gap-5 p-4">
                 <form id="orderForm1">
                     {% csrf_token %}
                     <div class="row g-3">
                         <div class="col-12 col-sm-6">
-                            <input type="text" name="name" class="form-control border-0 rounded-3"
+                            <input type="text" name="name" class="form-control border-0 rounded-3 small"
                                    placeholder="{% trans "Ваше ім'я" %}"
-                                   required style="height: 55px;" maxlength="32">
+                                   required maxlength="32">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="text" name="phone" class="form-control border-0 rounded-3"
-                                   placeholder="{% trans "Ваш номер телефону" %}" required style="height: 55px;" maxlength="32">
+                            <input type="text" name="phone" class="form-control border-0 rounded-3 small"
+                                   placeholder="{% trans "Ваш номер телефону" %}" required maxlength="32">
                         </div>
                         <div class="col-12">
-                    <textarea class="form-control border-0 rounded-3" name="car_model"
-                              placeholder="{% trans "Марка та модель авто" %}" required style="height: 100px;"
-                              maxlength="32"></textarea>
+                    <textarea class="form-control border-0 rounded-3 big" name="car_model"
+                              placeholder="{% trans "Марка та модель авто" %}" required maxlength="32"></textarea>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="text" name="vin_code" class="form-control border-0 rounded-3"
-                                   placeholder="{% trans "VIN код" %}"
-                                   style="height: 55px;" maxlength="32">
+                            <input type="text" name="vin_code" class="form-control border-0 rounded-3 small"
+                                   placeholder="{% trans "VIN код" %}" maxlength="32">
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="text" name="part_name" class="form-control border-0 rounded-3"
-                                   placeholder="{% trans "Назва запчастини" %}" style="height: 55px;" maxlength="64">
+                                   placeholder="{% trans "Назва запчастини" %}" maxlength="64">
                         </div>
                         <div class="col-12">
-                    <textarea class="form-control border-0 rounded-3" name="additional_info"
-                              placeholder="{% trans "Додаткова інформація" %}" style="height: 100px;" maxlength="128"></textarea>
+                    <textarea class="form-control border-0 rounded-3 big" name="additional_info"
+                              placeholder="{% trans "Додаткова інформація" %}" maxlength="128"></textarea>
                         </div>
 
                     <div class="col-12">
                         <input type="text" hidden value="PT" name="request_type">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary w-100 py-3" style="border-radius: 5px;">
+                        <button type="submit" class="btn btn-primary w-100 py-3">
                             {% trans "Замовити" %}   <svg class="icon8" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
       <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/>
    </svg></button>
