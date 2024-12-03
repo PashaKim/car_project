@@ -252,7 +252,7 @@ msgstr "Заказ новых запчастей"
 
 #: .\templates\include\services.html:41
 msgid "Підбір двигунів та коробок передач"
-msgstr "Подбор двигателей и коробок передач под ваше авто"
+msgstr "Подбор двигателей и коробок передач"
 
 #: .\templates\include\services.html:56
 msgid "Автовикуп"
