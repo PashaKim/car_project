@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-123456789"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['autopodbor007.com.ua']  # Добавьте ваш домен
 
 # Application definition
 

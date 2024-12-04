@@ -24,11 +24,11 @@ from django.views.generic import TemplateView
 from main.views import LandingView, CustomerRequestFormView, redirect_main, handler404, handler500
 
 
-handler404 = handler404
-handler500 = handler500
+handler404 = 'main.views.handler404'  # Указываем путь к функции в строковом формате
+handler500 = 'main.views.handler500'
 
 urlpatterns = [
-    path("uk/", redirect_main, name='main'),
+    path("uk/target-page/", LandingView.as_view(), name='target_page'),
     path("i18n/", include("django.conf.urls.i18n")),
     path("moderatory/", admin.site.urls),
     path("save_form/", CustomerRequestFormView.as_view()),
