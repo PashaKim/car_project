@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 22:53+0200\n"
+"POT-Creation-Date: 2024-12-05 01:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\404.html:25 .\templates\500.html:25
+#: .\templates\404.html:16 .\templates\500.html:16
 msgid "404"
 msgstr ""
 
-#: .\templates\404.html:26 .\templates\500.html:26
+#: .\templates\404.html:17 .\templates\500.html:17
 msgid "На жаль, сторінку не знайдено"
 msgstr ""
 
-#: .\templates\404.html:27 .\templates\500.html:27
+#: .\templates\404.html:18 .\templates\500.html:18
 msgid ""
 "Сторінка, яку ви шукаєте, можливо, була переміщена або ніколи не існувала."
 msgstr ""
 
-#: .\templates\404.html:28 .\templates\500.html:28
+#: .\templates\404.html:19 .\templates\500.html:19
 msgid "Повернутися на головну"
 msgstr ""
 
@@ -45,11 +45,10 @@ msgstr ""
 
 #: .\templates\include\carousel.html:20 .\templates\include\carousel.html:45
 #: .\templates\include\carousel.html:68
-#: .\templates\include\contact_model\modal_1.html:45
-#: .\templates\include\contact_model\modal_2.html:44
-#: .\templates\include\contact_model\modal_3.html:40
-#: .\templates\include\services.html:102 .\templates\include\services.html:131
-#: .\templates\include\services.html:166 .\templates\include\services.html:194
+#: .\templates\include\contact_model\modal_1.html:43
+#: .\templates\include\contact_model\modal_3.html:37
+#: .\templates\include\services.html:109 .\templates\include\services.html:138
+#: .\templates\include\services.html:173 .\templates\include\services.html:201
 msgid "Замовити"
 msgstr ""
 
@@ -70,51 +69,45 @@ msgid "Терміновий (швидкий) викуп авто"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:14
-#: .\templates\include\contact_model\modal_2.html:14
 #: .\templates\include\contact_model\modal_3.html:14
 msgid "Ваше ім'я"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:19
-#: .\templates\include\contact_model\modal_2.html:19
-#: .\templates\include\contact_model\modal_3.html:19
+#: .\templates\include\contact_model\modal_3.html:18
 msgid "Ваш номер телефону"
 msgstr ""
 
 #: .\templates\include\contact_model\modal_1.html:23
-#: .\templates\include\contact_model\modal_2.html:23
-#: .\templates\include\contact_model\modal_3.html:23
+#: .\templates\include\contact_model\modal_3.html:22
 msgid "Марка та модель авто"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:28
-#: .\templates\include\contact_model\modal_2.html:28
+#: .\templates\include\contact_model\modal_1.html:27
 msgid "VIN код"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:33
-#: .\templates\include\contact_model\modal_2.html:33
+#: .\templates\include\contact_model\modal_1.html:31
 msgid "Назва запчастини"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:37
-#: .\templates\include\contact_model\modal_2.html:37
-#: .\templates\include\contact_model\modal_3.html:33
+#: .\templates\include\contact_model\modal_1.html:35
+#: .\templates\include\contact_model\modal_3.html:30
 msgid "Додаткова інформація"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:52
+#: .\templates\include\contact_model\modal_2.html:11
 msgid "Оберіть платформу для зв'язку: "
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:70
-#: .\templates\include\contact_model\modal_footer.html:21
+#: .\templates\include\contact_model\modal_2.html:24
+#: .\templates\include\contact_model\modal_footer.html:19
 msgid ""
 "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
 "номером: "
 msgstr ""
 
-#: .\templates\include\contact_model\modal_3.html:28
+#: .\templates\include\contact_model\modal_3.html:26
 msgid "Ваше місто/село"
 msgstr ""
 
@@ -179,8 +172,9 @@ msgstr ""
 
 #: .\templates\include\meta.html:7
 msgid ""
-"Ми надаємо професійні послуги з підбору автозапчастин, двигунів та коробок "
-"передач. Швидкий викуп авто та консультації з ремонту."
+"Ми надаємо професійні послуги з підбору нових і б/у автозапчастин, двигунів "
+"та коробок передач. Пропонуємо швидкий викуп авто, консультації з ремонту та "
+"експлуатації. Працюємо по всій Україні."
 msgstr ""
 
 #: .\templates\include\meta.html:9
@@ -233,156 +227,156 @@ msgstr ""
 msgid "Замовлення нових запчастин"
 msgstr ""
 
-#: .\templates\include\services.html:41
+#: .\templates\include\services.html:43
 msgid "Підбір двигунів та коробок передач"
 msgstr ""
 
-#: .\templates\include\services.html:56
+#: .\templates\include\services.html:59
 msgid "Автовикуп"
 msgstr ""
 
-#: .\templates\include\services.html:69
+#: .\templates\include\services.html:74
 msgid "Консультації по авто"
 msgstr ""
 
-#: .\templates\include\services.html:80
+#: .\templates\include\services.html:87
 msgid "Нові оригінальні та б/у запчастини"
 msgstr ""
 
-#: .\templates\include\services.html:84
+#: .\templates\include\services.html:91
 msgid ""
 "Гарантуємо точний підбір запчастин та агрегатів на Ваше авто по VIN-номеру "
 "автомобіля"
 msgstr ""
 
-#: .\templates\include\services.html:85
+#: .\templates\include\services.html:92
 msgid ""
 "Нові оригінальні запчастини та їх бюджетні аналоги, вживані запчастини в "
 "гарному стані для будь-якої марки авто по приємним цінам, а головне з "
 "можливістю знижок при наступному замовленні у нас "
 msgstr ""
 
-#: .\templates\include\services.html:86
+#: .\templates\include\services.html:93
 msgid ""
 "Двигуни, коробки передач, кузовні деталі та інші запчастини з гарантією від "
 "нашої мережі "
 msgstr ""
 
-#: .\templates\include\services.html:87
+#: .\templates\include\services.html:94
 msgid "Гарантуємо якість та порядність угоди "
 msgstr ""
 
-#: .\templates\include\services.html:90
+#: .\templates\include\services.html:97
 msgid ""
 "Термін доставки поштою по Україні  1-2 дні (відправка в день замовлення) "
 msgstr ""
 
-#: .\templates\include\services.html:93
+#: .\templates\include\services.html:100
 msgid "Термін доставки перевізниками з Європи 10-14 днів "
 msgstr ""
 
-#: .\templates\include\services.html:96
+#: .\templates\include\services.html:103
 msgid "Гарантія на вживані запчастини 14-30 днів (залежить від запчастини) "
 msgstr ""
 
-#: .\templates\include\services.html:99
+#: .\templates\include\services.html:106
 msgid "Гарантія на нові 3-6 місяців (залежить від запчастини)"
 msgstr ""
 
-#: .\templates\include\services.html:113
+#: .\templates\include\services.html:120
 msgid "Підбір двигунів та коробок передач під ваше авто"
 msgstr ""
 
-#: .\templates\include\services.html:117
+#: .\templates\include\services.html:124
 msgid ""
 "Наші спеціалісти надають професійні послуги з пошуку та підбору двигунів та "
 "коробок передач під ваше авто. Взаємодіємо з великою базою як нових так і б/"
 "у агрегатів з доступом до їх складів"
 msgstr ""
 
-#: .\templates\include\services.html:118
+#: .\templates\include\services.html:125
 msgid "Вартість: $XXХ (Залежить від авто)"
 msgstr ""
 
-#: .\templates\include\services.html:121 .\templates\include\services.html:185
+#: .\templates\include\services.html:128 .\templates\include\services.html:192
 msgid "Висока кваліфікація фахівців"
 msgstr ""
 
-#: .\templates\include\services.html:124
+#: .\templates\include\services.html:131
 msgid "Високоточне обладнання"
 msgstr ""
 
-#: .\templates\include\services.html:128
+#: .\templates\include\services.html:135
 msgid "Гарантія на виконані роботи"
 msgstr ""
 
-#: .\templates\include\services.html:142
+#: .\templates\include\services.html:149
 msgid "Оцінка та викуп авто"
 msgstr ""
 
-#: .\templates\include\services.html:146
+#: .\templates\include\services.html:153
 msgid "- Без пошкоджень"
 msgstr ""
 
-#: .\templates\include\services.html:147
+#: .\templates\include\services.html:154
 msgid "- Після ДТП"
 msgstr ""
 
-#: .\templates\include\services.html:148
+#: .\templates\include\services.html:155
 msgid "- В Європі на українській реєстрації"
 msgstr ""
 
-#: .\templates\include\services.html:149
+#: .\templates\include\services.html:156
 msgid ""
 "Для того щоб ми придбали Ваше авто,  ціна має бути нижче ринкової вартості "
 "автомобілі по цінам з сайтів не розглянемо для купівлі, можливий лише "
 "комісійний продаж (під нашого клієнта) обговоримо це індивідуально"
 msgstr ""
 
-#: .\templates\include\services.html:150
+#: .\templates\include\services.html:157
 msgid "Можливість оцінки авто по фото та короткому опису, без Вашого приїзду."
 msgstr ""
 
-#: .\templates\include\services.html:151
+#: .\templates\include\services.html:158
 msgid "Гарантуємо:"
 msgstr ""
 
-#: .\templates\include\services.html:154
+#: .\templates\include\services.html:161
 msgid "Лояльність та порядність з нашого боку до клієнта "
 msgstr ""
 
-#: .\templates\include\services.html:157
+#: .\templates\include\services.html:164
 msgid "Чистоту в юридичних питаннях "
 msgstr ""
 
-#: .\templates\include\services.html:160
+#: .\templates\include\services.html:167
 msgid "Швидку оцінку транспортного засобу (по фото-відео та короткому опису)"
 msgstr ""
 
-#: .\templates\include\services.html:163
+#: .\templates\include\services.html:170
 msgid "Швидкий розрахунок на місці  "
 msgstr ""
 
-#: .\templates\include\services.html:177
+#: .\templates\include\services.html:184
 msgid "консультації з вибору, ремонту та експлуатації автомобілів"
 msgstr ""
 
-#: .\templates\include\services.html:181
+#: .\templates\include\services.html:188
 msgid ""
 "Наша команда експертів надає консультації з будь-яких питань, пов'язаних з "
 "вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти "
 "оптимальні рішення для вашого авто.."
 msgstr ""
 
-#: .\templates\include\services.html:182
+#: .\templates\include\services.html:189
 msgid "Безкоштовно!"
 msgstr ""
 
-#: .\templates\include\services.html:188
+#: .\templates\include\services.html:195
 msgid "Індивідуальний підхід"
 msgstr ""
 
-#: .\templates\include\services.html:191
+#: .\templates\include\services.html:198
 msgid "Підтримка на всіх етапах"
 msgstr ""
 
