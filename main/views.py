@@ -42,9 +42,9 @@ def redirect_main(request):
     return redirect('/')
 
 
-def handler404(request, exception=None):
-    return render(request, '404.html', status=404)  # Добавляем статус 404
+def customhandler404(request, exception=None, template_name='404.html'):
+    return render(request, template_name, status=404)
 
 
-def handler500(request, exception=None):
-    return render(request, '500.html', status=500)  # Добавляем статус 500
+def customhandler500(request, exception=None,  template_name='500.html'):
+    return render(request, template_name, status=500)

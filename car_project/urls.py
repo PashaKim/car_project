@@ -21,11 +21,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
-from main.views import LandingView, CustomerRequestFormView, redirect_main, handler404, handler500
+from main.views import LandingView, CustomerRequestFormView
 
 
-handler404 = 'main.views.handler404'  # Указываем путь к функции в строковом формате
-handler500 = 'main.views.handler500'
+handler404 = 'main.views.customhandler404'
+handler500 = 'main.views.customhandler500'
 
 urlpatterns = [
     path("uk/target-page/", LandingView.as_view(), name='target_page'),
