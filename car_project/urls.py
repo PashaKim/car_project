@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
-from main.views import LandingView, CustomerRequestFormView
+from main.views import LandingView, CustomerRequestFormView, redirect_main
 
 
 handler404 = 'main.views.customhandler404'
@@ -40,6 +40,7 @@ urlpatterns = [
         "sitemap.xml",
         TemplateView.as_view(template_name="sitemap.xml", content_type="text/plain"),
     ),
+    path("uk/", redirect_main)
 ]
 
 urlpatterns += i18n_patterns(
