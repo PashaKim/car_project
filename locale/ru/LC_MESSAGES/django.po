@@ -415,7 +415,7 @@ msgstr "Индивидуальный подход"
 
 #: .\templates\include\services.html:198
 msgid "Підтримка на всіх етапах"
-msgstr "ПОддержка на всех этапах"
+msgstr "Поддержка на всех этапах"
 
 #: .\templates\include\testimonial.html:7
 msgid "// Відгуки //"
