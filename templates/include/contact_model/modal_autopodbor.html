@@ -1,0 +1,59 @@
+{% load i18n %}
+<!-- Autopodbor request modal: visual layout only, not connected to backend -->
+<div class="modal fade" id="contactModalAutopodbor" tabindex="-1" aria-labelledby="contactModalAutopodborLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+            <div class="modal-header justify-content-center">
+                <h5 class="modal-title text-center" id="contactModalAutopodborLabel">Заявка на автопідбір</h5>
+            </div>
+            <div class="modal-body p-4">
+                <!-- FRONTEND ONLY: Backend developer will implement submission and validation. -->
+                <form id="orderFormAutopodbor">
+                    {% csrf_token %}
+                    <input type="hidden" name="request_type" value="AP">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control border-0 rounded-3 small" name="car_model"
+                                   placeholder="Марка та модель авто (наприклад, Audi A6) *" required maxlength="32" autocomplete="off">
+                        </div>
+                        <div class="col-6">
+                            <label for="autopodborYearFrom" class="form-label mb-1">Рік випуску від</label>
+                            <input id="autopodborYearFrom" type="number" class="form-control border-0 rounded-3 small"
+                                   name="year_from" placeholder="2015" min="1980" max="2030" step="1" inputmode="numeric">
+                        </div>
+                        <div class="col-6">
+                            <label for="autopodborYearTo" class="form-label mb-1">До</label>
+                            <input id="autopodborYearTo" type="number" class="form-control border-0 rounded-3 small"
+                                   name="year_to" placeholder="2023" min="1980" max="2030" step="1" inputmode="numeric">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="budget" class="form-control border-0 rounded-3 small"
+                                   placeholder="Бюджет (наприклад, до 15 000 $)" maxlength="64">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="additional_info" class="form-control border-0 rounded-3 big" rows="2"
+                                      placeholder="Побажання до авто (коробка, пальне, пробіг тощо)" maxlength="256"></textarea>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="name" class="form-control border-0 rounded-3 small"
+                                   placeholder="Ваше ім'я *" required maxlength="32" autocomplete="name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="tel" name="phone" class="form-control border-0 rounded-3 small"
+                                   placeholder="Номер телефону *" required maxlength="32" autocomplete="tel">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-100 py-3">Надіслати заявку
+                                <svg class="icon8" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            {% include 'include/contact_model/modal_footer.html' %}
+        </div>
+    </div>
+</div>
