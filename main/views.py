@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 
 from car_project.settings import TELEGRAM_VALUE, VIBER_VALUE, PHONE_VALUE, LANGUAGES
 from car_project.utils import get_client_ip
-from main.forms import CustomerRequestForm
+from main.forms import CustomerRequestForm, CustomerRequestAutopodborForm
 
 
 # Create your views here.
@@ -37,6 +37,17 @@ class CustomerRequestFormView(View):
 
         return JsonResponse({"status": "error", "detail": form.errors})
 
+
+class CustomerRequestFormAutopodborView(View):
+
+    def post(self, request):
+        form = CustomerRequestAutopodborForm(get_client_ip(request), request.POST)
+
+        if form.is_valid():
+            form.save()
+            return JsonResponse({"status": "success"})
+
+        return JsonResponse({"status": "error", "detail": form.errors})
 
 def redirect_main(request):
     return redirect('/')

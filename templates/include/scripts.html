@@ -62,6 +62,40 @@
     saveForm('orderForm1');
     saveForm('orderForm2');
     saveForm('orderForm3');
+    function saveFormAutopodbor(formName) {
+        const formElement = document.getElementById(formName);
+        // Перевірка на існування елемента
+        if (!formElement) {
+            console.warn(`Форма з id '${formName}' не знайдена на цій сторінці.`);
+            return;
+        }
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault(); // Блокуємо стандартне відправлення форми
+
+            // Збираємо дані форми
+            const formData = new FormData(this);
+
+            // Відправка даних через AJAX
+            fetch('/save-form-autopodbor/', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert("Ваше замовлення успішно надіслано!");
+                        this.reset(); // Очищаємо форму після успішної відправки
+                    } else {
+                        alert("Вибачте, сталася помилка (" + JSON.stringify(data.detail) + "). Спробуйте ще раз.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("Вибачте, сталася помилка при відправці.");
+                });
+        });
+    }
+    saveFormAutopodbor('orderFormAutopodbor')
 </script>
 <!-- Бургер-меню -->
 <script>

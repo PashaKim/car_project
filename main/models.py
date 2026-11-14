@@ -30,6 +30,7 @@ class CustomerRequest(models.Model):
         Engine = 'EG', 'Engine'
         BUY = 'BU', 'Buy'
         PART = 'PT', 'Part'
+        AP = 'AP', 'AP'
 
     car_model = models.CharField(max_length=32, blank=True, default="")
     car_vin = models.CharField(max_length=32, blank=True, default="")
@@ -43,6 +44,10 @@ class CustomerRequest(models.Model):
     request_type = models.CharField(max_length=2, choices=RequestType.choices, default=RequestType.PART)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
 
+    year_from = models.CharField(max_length=12, blank=True, default="")
+    year_to = models.CharField(max_length=12, blank=True, default="")
+    budget = models.CharField(max_length=128, blank=True, default="")
+
     def customer_name(self):
         return self.customer.user.first_name
 
@@ -50,4 +55,4 @@ class CustomerRequest(models.Model):
         ordering = ['-created']
 
     def __str__(self):
-        return f'{self.customer}; {self.car_vin}/{self.car_part_name}'
+        return f'{self.customer}; {self.year_from}/{self.year_to}; {self.car_vin}/{self.car_part_name}'

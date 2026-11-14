@@ -21,8 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
-from main.views import LandingView, CustomerRequestFormView, redirect_main
-
+from main.views import LandingView, CustomerRequestFormView, redirect_main, CustomerRequestFormAutopodborView
 
 handler404 = 'main.views.customhandler404'
 handler500 = 'main.views.customhandler500'
@@ -32,6 +31,7 @@ urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
     path("moderatory/", admin.site.urls),
     path("save_form/", CustomerRequestFormView.as_view()),
+    path("save-form-autopodbor/", CustomerRequestFormAutopodborView.as_view()),
     path(
         "robots.txt",
         TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),

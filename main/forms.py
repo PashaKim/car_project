@@ -67,3 +67,68 @@ class CustomerRequestForm(forms.Form):
         if not customer:
             customer = Customer.objects.create(user_id=user.id, ip_data=self.ip_value)
         return customer
+
+
+class CustomerRequestAutopodborForm(forms.Form):
+
+    def __init__(self, ip_value=None, *args, **kwargs):
+        self.ip_value = ip_value
+        super().__init__(*args, **kwargs)
+
+    name = forms.CharField(max_length=32)
+    phone = forms.CharField(max_length=32)
+    car_model = forms.CharField(max_length=32)
+    additional_info = forms.CharField(max_length=256, required=False)
+    request_type = forms.CharField(max_length=32, required=False)
+    year_from = forms.CharField(max_length=12, required=False)
+    year_to = forms.CharField(max_length=12, required=False)
+    budget = forms.CharField(max_length=256, required=False)
+
+    def save(self):
+        # Un Comment on prod
+        # customer = Customer.objects.filter(ip_data=self.ip_value).first()
+        #
+        # if customer and customer.status == Customer.Status.BANNED:
+        #     return None
+
+        # if not customer:
+        user = self.create_user()
+        customer = self.create_customer(user)
+
+        past_requests = CustomerRequest.objects.filter(customer=customer, created__date=date.today())
+
+        if len(past_requests) >= MAX_PAST_REQUESTS:
+            customer.status = Customer.Status.BANNED
+            customer.save()
+            return None
+
+        instance = CustomerRequest.objects.create(
+            customer=customer,
+            car_model=self.cleaned_data.get('car_model', ''),
+            request_type=self.cleaned_data.get('request_type', ''),
+            additional_info=self.cleaned_data.get('additional_info', ''),
+            year_from=self.cleaned_data.get('year_from', ''),
+            year_to = self.cleaned_data.get('year_to', ''),
+            budget = self.cleaned_data.get('budget', ''),
+        )
+
+        try:
+            if IS_SEND_EMAIL:
+                send_email_to_admin(instance)
+        except:
+            pass
+
+        return instance
+
+    def create_user(self):
+        user, created = User.objects.get_or_create(
+            username=self.cleaned_data.get('phone', 'anon'),
+            first_name=self.cleaned_data.get('name'),
+        )
+        return user
+
+    def create_customer(self, user: User):
+        customer = Customer.objects.filter(user_id=user.id).first()
+        if not customer:
+            customer = Customer.objects.create(user_id=user.id, ip_data=self.ip_value)
+        return customer
