@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 01:23+0200\n"
+"POT-Creation-Date: 2026-11-14 17:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,408 +21,449 @@ msgstr ""
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: .\templates\404.html:16 .\templates\500.html:16
+#: templates/404.html:16 templates/500.html:16
 msgid "404"
 msgstr ""
 
-#: .\templates\404.html:17 .\templates\500.html:17
+#: templates/404.html:17 templates/500.html:17
 msgid "На жаль, сторінку не знайдено"
 msgstr ""
 
-#: .\templates\404.html:18 .\templates\500.html:18
+#: templates/404.html:18 templates/500.html:18
 msgid ""
 "Сторінка, яку ви шукаєте, можливо, була переміщена або ніколи не існувала."
 msgstr ""
 
-#: .\templates\404.html:19 .\templates\500.html:19
+#: templates/404.html:19 templates/500.html:19
 msgid "Повернутися на головну"
 msgstr ""
 
-#: .\templates\include\carousel.html:16
+#: templates/include/carousel.html:16
+msgid "// Автопідбір //"
+msgstr ""
+
+#: templates/include/carousel.html:17
+msgid "Підберемо надійний автомобіль під ваш бюджет"
+msgstr ""
+
+#: templates/include/carousel.html:20 templates/include/services.html:113
+msgid "Замовити автопідбір"
+msgstr ""
+
+#: templates/include/carousel.html:28 templates/include/services.html:24
+msgid "Автопідбір"
+msgstr ""
+
+#: templates/include/carousel.html:41
 msgid "// Автозапчастини  //"
 msgstr ""
 
-#: .\templates\include\carousel.html:17 .\templates\include\carousel.html:28
+#: templates/include/carousel.html:42 templates/include/carousel.html:53
 msgid "Нові та б/у запчастини до будь-якої марки авто"
 msgstr ""
 
-#: .\templates\include\carousel.html:20 .\templates\include\carousel.html:45
-#: .\templates\include\carousel.html:68
-#: .\templates\include\contact_model\modal_1.html:43
-#: .\templates\include\contact_model\modal_3.html:37
-#: .\templates\include\services.html:109 .\templates\include\services.html:138
-#: .\templates\include\services.html:173 .\templates\include\services.html:201
+#: templates/include/carousel.html:45 templates/include/carousel.html:70
+#: templates/include/carousel.html:93
+#: templates/include/contact_model/modal_1.html:43
+#: templates/include/contact_model/modal_3.html:37
+#: templates/include/services.html:147 templates/include/services.html:175
+#: templates/include/services.html:210 templates/include/services.html:238
 msgid "Замовити"
 msgstr ""
 
-#: .\templates\include\carousel.html:41
+#: templates/include/carousel.html:66
 msgid "// Автопослуги //"
 msgstr ""
 
-#: .\templates\include\carousel.html:42 .\templates\include\carousel.html:52
+#: templates/include/carousel.html:67 templates/include/carousel.html:77
 msgid "Замовлення і підбір двигунів та коробок передач"
 msgstr ""
 
-#: .\templates\include\carousel.html:64
+#: templates/include/carousel.html:89
 msgid "// Автовикуп //"
 msgstr ""
 
-#: .\templates\include\carousel.html:65 .\templates\include\carousel.html:75
+#: templates/include/carousel.html:90 templates/include/carousel.html:100
 msgid "Терміновий (швидкий) викуп авто"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:14
-#: .\templates\include\contact_model\modal_3.html:14
+#: templates/include/contact_model/modal_1.html:14
+#: templates/include/contact_model/modal_3.html:14
 msgid "Ваше ім'я"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:19
-#: .\templates\include\contact_model\modal_3.html:18
+#: templates/include/contact_model/modal_1.html:19
+#: templates/include/contact_model/modal_3.html:18
 msgid "Ваш номер телефону"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:23
-#: .\templates\include\contact_model\modal_3.html:22
+#: templates/include/contact_model/modal_1.html:23
+#: templates/include/contact_model/modal_3.html:22
 msgid "Марка та модель авто"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:27
+#: templates/include/contact_model/modal_1.html:27
 msgid "VIN код"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:31
+#: templates/include/contact_model/modal_1.html:31
 msgid "Назва запчастини"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_1.html:35
-#: .\templates\include\contact_model\modal_3.html:30
+#: templates/include/contact_model/modal_1.html:35
+#: templates/include/contact_model/modal_3.html:30
 msgid "Додаткова інформація"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:11
+#: templates/include/contact_model/modal_2.html:11
 msgid "Оберіть платформу для зв'язку: "
 msgstr ""
 
-#: .\templates\include\contact_model\modal_2.html:24
-#: .\templates\include\contact_model\modal_footer.html:19
+#: templates/include/contact_model/modal_2.html:24
+#: templates/include/contact_model/modal_footer.html:19
 msgid ""
 "Якщо Viber або Telegram у вас відсутні, будь ласка, зателефонуйте нам за "
 "номером: "
 msgstr ""
 
-#: .\templates\include\contact_model\modal_3.html:26
+#: templates/include/contact_model/modal_3.html:26
 msgid "Ваше місто/село"
 msgstr ""
 
-#: .\templates\include\contact_model\modal_footer.html:3
+#: templates/include/contact_model/modal_footer.html:3
 msgid "Або оберіть платформу для зв'язку: "
 msgstr ""
 
-#: .\templates\include\examples.html:7
+#: templates/include/examples.html:7
 msgid "// Приклади //"
 msgstr ""
 
-#: .\templates\include\examples.html:8
+#: templates/include/examples.html:8
 msgid "Підбір запчастин та закупівля нашим клієнтам"
 msgstr ""
 
-#: .\templates\include\examples.html:14 .\templates\include\examples.html:18
-#: .\templates\include\examples.html:22 .\templates\include\examples.html:26
-#: .\templates\include\examples.html:30 .\templates\include\examples.html:34
+#: templates/include/examples.html:14 templates/include/examples.html:18
+#: templates/include/examples.html:22 templates/include/examples.html:26
+#: templates/include/examples.html:30 templates/include/examples.html:34
 msgid "запчастини та закупівля"
 msgstr ""
 
-#: .\templates\include\examples.html:39
+#: templates/include/examples.html:39
 msgid "Великий склад двигунів, коробок передач та інших запчастин"
 msgstr ""
 
-#: .\templates\include\examples.html:43 .\templates\include\examples.html:47
-#: .\templates\include\examples.html:51 .\templates\include\examples.html:55
-#: .\templates\include\examples.html:59
+#: templates/include/examples.html:43 templates/include/examples.html:47
+#: templates/include/examples.html:51 templates/include/examples.html:55
+#: templates/include/examples.html:59
 msgid "склад двигунів, коробок передач та інших запчастин"
 msgstr ""
 
-#: .\templates\include\footer.html:7 .\templates\include\footer.html:37
-#: .\templates\include\navbar.html:29
+#: templates/include/footer.html:7 templates/include/footer.html:37
+#: templates/include/navbar.html:29
 msgid "Контакти"
 msgstr ""
 
-#: .\templates\include\footer.html:10 .\templates\include\topbar.html:11
+#: templates/include/footer.html:10 templates/include/topbar.html:11
 msgid "Київ, Бровари, Київська область"
 msgstr ""
 
-#: .\templates\include\footer.html:33
+#: templates/include/footer.html:33
 msgid "Карта Сайту"
 msgstr ""
 
-#: .\templates\include\footer.html:34 .\templates\include\navbar.html:26
+#: templates/include/footer.html:34 templates/include/navbar.html:26
 msgid "Послуги"
 msgstr ""
 
-#: .\templates\include\footer.html:35 .\templates\include\navbar.html:27
+#: templates/include/footer.html:35 templates/include/navbar.html:27
 msgid "Приклади робіт"
 msgstr ""
 
-#: .\templates\include\footer.html:36 .\templates\include\navbar.html:28
+#: templates/include/footer.html:36 templates/include/navbar.html:28
 msgid "Відгуки"
 msgstr ""
 
-#: .\templates\include\meta.html:6
+#: templates/include/meta.html:6
 msgid ""
 "автопідбір, викуп авто, запчастини, двигуни, коробки передач, консультації "
 "авто, авто Україна, продаж авто"
 msgstr ""
 
-#: .\templates\include\meta.html:7
+#: templates/include/meta.html:7
 msgid ""
 "Ми надаємо професійні послуги з підбору нових і б/у автозапчастин, двигунів "
 "та коробок передач. Пропонуємо швидкий викуп авто, консультації з ремонту та "
 "експлуатації."
 msgstr ""
 
-#: .\templates\include\meta.html:9
+#: templates/include/meta.html:9
 msgid ""
 "Професійний автопідбір, закупівля автозапчастин та консультації | "
 "autopodbor_007"
 msgstr ""
 
-#: .\templates\include\meta.html:10
+#: templates/include/meta.html:10
 msgid ""
 "Швидкий викуп авто, підбір нових і б/у запчастин, консультації з ремонту та "
 "експлуатації автомобілів."
 msgstr ""
 
-#: .\templates\include\meta.html:16
+#: templates/include/meta.html:16
 msgid "autopodbor_007 | Автопідбір, автозапчастини та викуп авто"
 msgstr ""
 
-#: .\templates\include\meta.html:17
+#: templates/include/meta.html:17
 msgid ""
 "Отримайте найкращі послуги з автопідбору, закупівлі запчастин та термінового "
 "викупу авто."
 msgstr ""
 
-#: .\templates\include\navbar.html:8
+#: templates/include/navbar.html:8
 msgid "лого_autopodbor_007"
 msgstr ""
 
-#: .\templates\include\navbar.html:25
+#: templates/include/navbar.html:25
 msgid "Головна"
 msgstr ""
 
-#: .\templates\include\services.html:7
+#: templates/include/services.html:7
 msgid "// ПОСЛУГИ //"
 msgstr ""
 
-#: .\templates\include\services.html:9
+#: templates/include/services.html:9
 msgid ""
 "1. Ми велика мережа розборок в Україні та Європі, маємо склади в багатьох "
 "містах країни."
 msgstr ""
 
-#: .\templates\include\services.html:11
+#: templates/include/services.html:11
 msgid ""
 "2. Терміновий (швидкий) викуп авто в Броварах та інших містах України та "
 "Європи"
 msgstr ""
 
-#: .\templates\include\services.html:27
+#: templates/include/services.html:39
 msgid "Замовлення нових запчастин"
 msgstr ""
 
-#: .\templates\include\services.html:43
+#: templates/include/services.html:55
 msgid "Підбір двигунів та коробок передач"
 msgstr ""
 
-#: .\templates\include\services.html:59
+#: templates/include/services.html:71
 msgid "Автовикуп"
 msgstr ""
 
-#: .\templates\include\services.html:74
+#: templates/include/services.html:86
 msgid "Консультації по авто"
 msgstr ""
 
-#: .\templates\include\services.html:87
+#: templates/include/services.html:101
+msgid "Послуга автопідбору"
+msgstr ""
+
+#: templates/include/services.html:105
+msgid ""
+"Допоможемо знайти автомобіль під ваш бюджет, потреби та побажання. "
+"Проаналізуємо пропозиції, перевіримо обрані варіанти та допоможемо прийняти "
+"зважене рішення перед покупкою."
+msgstr ""
+
+#: templates/include/services.html:106
+msgid "Гарантуємо якість та порядність угоди"
+msgstr ""
+
+#: templates/include/services.html:107
+msgid "Підбираємо автомобіль відповідно до вашого бюджету та побажань."
+msgstr ""
+
+#: templates/include/services.html:108
+msgid "Перевіряємо технічний стан та історію обраних варіантів."
+msgstr ""
+
+#: templates/include/services.html:109
+msgid "Допомагаємо оцінити реальну вартість автомобіля."
+msgstr ""
+
+#: templates/include/services.html:110
+msgid "Супроводжуємо процес вибору та покупки."
+msgstr ""
+
+#: templates/include/services.html:125
 msgid "Нові оригінальні та б/у запчастини"
 msgstr ""
 
-#: .\templates\include\services.html:91
+#: templates/include/services.html:129
 msgid ""
 "Гарантуємо точний підбір запчастин та агрегатів на Ваше авто по VIN-номеру "
 "автомобіля"
 msgstr ""
 
-#: .\templates\include\services.html:92
+#: templates/include/services.html:130
 msgid ""
 "Нові оригінальні запчастини та їх бюджетні аналоги, вживані запчастини в "
 "гарному стані для будь-якої марки авто по приємним цінам, а головне з "
 "можливістю знижок при наступному замовленні у нас "
 msgstr ""
 
-#: .\templates\include\services.html:93
+#: templates/include/services.html:131
 msgid ""
 "Двигуни, коробки передач, кузовні деталі та інші запчастини з гарантією від "
 "нашої мережі "
 msgstr ""
 
-#: .\templates\include\services.html:94
+#: templates/include/services.html:132
 msgid "Гарантуємо якість та порядність угоди "
 msgstr ""
 
-#: .\templates\include\services.html:97
+#: templates/include/services.html:135
 msgid ""
 "Термін доставки поштою по Україні  1-2 дні (відправка в день замовлення) "
 msgstr ""
 
-#: .\templates\include\services.html:100
+#: templates/include/services.html:138
 msgid "Термін доставки перевізниками з Європи 10-14 днів "
 msgstr ""
 
-#: .\templates\include\services.html:103
+#: templates/include/services.html:141
 msgid "Гарантія на вживані запчастини 14-30 днів (залежить від запчастини) "
 msgstr ""
 
-#: .\templates\include\services.html:106
+#: templates/include/services.html:144
 msgid "Гарантія на нові 3-6 місяців (залежить від запчастини)"
 msgstr ""
 
-#: .\templates\include\services.html:120
+#: templates/include/services.html:158
 msgid "Підбір двигунів та коробок передач під ваше авто"
 msgstr ""
 
-#: .\templates\include\services.html:124
+#: templates/include/services.html:162
 msgid ""
 "Наші спеціалісти надають професійні послуги з пошуку та підбору двигунів та "
 "коробок передач під ваше авто. Взаємодіємо з великою базою як нових так і б/"
 "у агрегатів з доступом до їх складів"
 msgstr ""
 
-#: .\templates\include\services.html:125
+#: templates/include/services.html:163
 msgid "Вартість: $XXХ (Залежить від авто)"
 msgstr ""
 
-#: .\templates\include\services.html:128 .\templates\include\services.html:192
+#: templates/include/services.html:166 templates/include/services.html:229
 msgid "Висока кваліфікація фахівців"
 msgstr ""
 
-#: .\templates\include\services.html:131
+#: templates/include/services.html:169
 msgid "Високоточне обладнання"
 msgstr ""
 
-#: .\templates\include\services.html:135
+#: templates/include/services.html:172
 msgid "Гарантія на виконані роботи"
 msgstr ""
 
-#: .\templates\include\services.html:149
+#: templates/include/services.html:186
 msgid "Оцінка та викуп авто"
 msgstr ""
 
-#: .\templates\include\services.html:153
+#: templates/include/services.html:190
 msgid "- Без пошкоджень"
 msgstr ""
 
-#: .\templates\include\services.html:154
+#: templates/include/services.html:191
 msgid "- Після ДТП"
 msgstr ""
 
-#: .\templates\include\services.html:155
+#: templates/include/services.html:192
 msgid "- В Європі на українській реєстрації"
 msgstr ""
 
-#: .\templates\include\services.html:156
+#: templates/include/services.html:193
 msgid ""
 "Для того щоб ми придбали Ваше авто,  ціна має бути нижче ринкової вартості "
 "автомобілі по цінам з сайтів не розглянемо для купівлі, можливий лише "
 "комісійний продаж (під нашого клієнта) обговоримо це індивідуально"
 msgstr ""
 
-#: .\templates\include\services.html:157
+#: templates/include/services.html:194
 msgid "Можливість оцінки авто по фото та короткому опису, без Вашого приїзду."
 msgstr ""
 
-#: .\templates\include\services.html:158
+#: templates/include/services.html:195
 msgid "Гарантуємо:"
 msgstr ""
 
-#: .\templates\include\services.html:161
+#: templates/include/services.html:198
 msgid "Лояльність та порядність з нашого боку до клієнта "
 msgstr ""
 
-#: .\templates\include\services.html:164
+#: templates/include/services.html:201
 msgid "Чистоту в юридичних питаннях "
 msgstr ""
 
-#: .\templates\include\services.html:167
+#: templates/include/services.html:204
 msgid "Швидку оцінку транспортного засобу (по фото-відео та короткому опису)"
 msgstr ""
 
-#: .\templates\include\services.html:170
+#: templates/include/services.html:207
 msgid "Швидкий розрахунок на місці  "
 msgstr ""
 
-#: .\templates\include\services.html:184
+#: templates/include/services.html:221
 msgid "консультації з вибору, ремонту та експлуатації автомобілів"
 msgstr ""
 
-#: .\templates\include\services.html:188
+#: templates/include/services.html:225
 msgid ""
 "Наша команда експертів надає консультації з будь-яких питань, пов'язаних з "
 "вибором, ремонтом та експлуатацією автомобілів. Ми допоможемо вам знайти "
 "оптимальні рішення для вашого авто.."
 msgstr ""
 
-#: .\templates\include\services.html:189
+#: templates/include/services.html:226
 msgid "Безкоштовно!"
 msgstr ""
 
-#: .\templates\include\services.html:195
+#: templates/include/services.html:232
 msgid "Індивідуальний підхід"
 msgstr ""
 
-#: .\templates\include\services.html:198
+#: templates/include/services.html:235
 msgid "Підтримка на всіх етапах"
 msgstr ""
 
-#: .\templates\include\testimonial.html:7
+#: templates/include/testimonial.html:7
 msgid "// Відгуки //"
 msgstr ""
 
-#: .\templates\include\testimonial.html:8
+#: templates/include/testimonial.html:8
 msgid "Щасливі клієнти"
 msgstr ""
 
-#: .\templates\include\testimonial.html:13
-#: .\templates\include\testimonial.html:17
-#: .\templates\include\testimonial.html:21
-#: .\templates\include\testimonial.html:25
-#: .\templates\include\testimonial.html:29
-#: .\templates\include\testimonial.html:33
-#: .\templates\include\testimonial.html:42
-#: .\templates\include\testimonial.html:46
-#: .\templates\include\testimonial.html:50
-#: .\templates\include\testimonial.html:54
-#: .\templates\include\testimonial.html:58
-#: .\templates\include\testimonial.html:62
-#: .\templates\include\testimonial.html:66
+#: templates/include/testimonial.html:13 templates/include/testimonial.html:17
+#: templates/include/testimonial.html:21 templates/include/testimonial.html:25
+#: templates/include/testimonial.html:29 templates/include/testimonial.html:33
+#: templates/include/testimonial.html:42 templates/include/testimonial.html:46
+#: templates/include/testimonial.html:50 templates/include/testimonial.html:54
+#: templates/include/testimonial.html:58 templates/include/testimonial.html:62
+#: templates/include/testimonial.html:66
 msgid "Відгук"
 msgstr ""
 
-#: .\templates\include\testimonial.html:37
+#: templates/include/testimonial.html:37
 msgid "Наші клієнти пишуть"
 msgstr ""
 
-#: .\templates\include\upper_facts.html:12
+#: templates/include/upper_facts.html:12
 msgid "Закуплено запчастин"
 msgstr ""
 
-#: .\templates\include\upper_facts.html:21
+#: templates/include/upper_facts.html:21
 msgid "Підборів та викупів під ключ"
 msgstr ""
 
-#: .\templates\include\upper_facts.html:29
+#: templates/include/upper_facts.html:29
 msgid "Років досвіду"
 msgstr ""
 
-#: .\templates\include\upper_facts.html:36
+#: templates/include/upper_facts.html:36
 msgid "Щасливих клієнтів"
 msgstr ""
