@@ -6,7 +6,7 @@
         <div class="modal-content">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
             <div class="modal-header justify-content-center">
-                <h5 class="modal-title text-center" id="contactModalAutopodborLabel">Заявка на автопідбір</h5>
+                <h5 class="modal-title text-center" id="contactModalAutopodborLabel">{% trans "Заявка на автопідбір" %}</h5>
             </div>
             <div class="modal-body p-4">
                 <!-- FRONTEND ONLY: Backend developer will implement submission and validation. -->
@@ -16,36 +16,36 @@
                     <div class="row g-3">
                         <div class="col-12">
                             <input type="text" class="form-control border-0 rounded-3 small" name="car_model"
-                                   placeholder="Марка та модель авто (наприклад, Audi A6) *" required maxlength="32"
+                                   placeholder="{% trans "Марка та модель авто (наприклад, Audi A6) *" %}" required maxlength="32"
                                    autocomplete="off">
                         </div>
                         <div class="col-6">
-                            <label for="autopodborYearFrom" class="form-label mb-1">Рік випуску від</label>
+                            <label for="autopodborYearFrom" class="form-label mb-1">{% trans "Рік випуску від" %}</label>
                             <input id="autopodborYearFrom" type="number" class="form-control border-0 rounded-3 small"
-                                   name="year_from" placeholder="наприклад, 2015" min="1980" max="2030" step="1"
+                                   name="year_from" placeholder="{% trans "наприклад, 2015" %}" min="1980" max="2030" step="1"
                                    inputmode="numeric">
                         </div>
                         <div class="col-6">
-                            <label for="autopodborYearTo" class="form-label mb-1">До</label>
+                            <label for="autopodborYearTo" class="form-label mb-1">{% trans "До" %}</label>
                             <input id="autopodborYearTo" type="number" class="form-control border-0 rounded-3 small"
-                                   name="year_to" placeholder="наприклад, 2023" min="1980" max="2030" step="1" inputmode="numeric">
+                                   name="year_to" placeholder="{% trans "наприклад, 2023" %}" min="1980" max="2030" step="1" inputmode="numeric">
                         </div>
                         <div class="col-12">
                             <input type="text" name="budget" class="form-control border-0 rounded-3 small"
-                                   placeholder="Бюджет (наприклад, до 15 000 $)" maxlength="64">
+                                   placeholder="{% trans "Бюджет (наприклад, до 15 000 $)" %}" maxlength="64">
                         </div>
                         <div class="col-12">
                             <textarea name="additional_info" class="form-control border-0 rounded-3 big" rows="2"
-                                      placeholder="Побажання до авто (коробка, пальне, пробіг тощо)"
+                                      placeholder="{% trans "Побажання до авто (коробка, пальне, пробіг тощо)" %}"
                                       maxlength="256"></textarea>
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="text" name="name" class="form-control border-0 rounded-3 small"
-                                   placeholder="Ваше ім'я *" required maxlength="32" autocomplete="name">
+                                   placeholder="{% trans "Ваше ім'я *" %}" required maxlength="32" autocomplete="name">
                         </div>
                         <div class="col-12 col-sm-6">
                             <input type="tel" name="phone" class="form-control border-0 rounded-3 small"
-                                   placeholder="Номер телефону *" required maxlength="32" autocomplete="tel">
+                                   placeholder="{% trans "Номер телефону *" %}" required maxlength="32" autocomplete="tel">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary w-100 py-3">
