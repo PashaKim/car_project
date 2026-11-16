@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-14 17:38+0000\n"
+"POT-Creation-Date: 2026-11-16 18:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,8 +61,8 @@ msgstr ""
 
 #: templates/include/carousel.html:45 templates/include/carousel.html:70
 #: templates/include/carousel.html:93
-#: templates/include/contact_model/modal_1.html:43
-#: templates/include/contact_model/modal_3.html:37
+#: templates/include/contact_model/modal_1.html:46
+#: templates/include/contact_model/modal_3.html:40
 #: templates/include/services.html:147 templates/include/services.html:175
 #: templates/include/services.html:210 templates/include/services.html:238
 msgid "Замовити"
@@ -84,31 +84,35 @@ msgstr ""
 msgid "Терміновий (швидкий) викуп авто"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:14
-#: templates/include/contact_model/modal_3.html:14
+#: templates/include/contact_model/modal_1.html:9
+msgid "Заявка на запчастини"
+msgstr ""
+
+#: templates/include/contact_model/modal_1.html:17
+#: templates/include/contact_model/modal_3.html:17
 msgid "Ваше ім'я"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:19
-#: templates/include/contact_model/modal_3.html:18
+#: templates/include/contact_model/modal_1.html:22
+#: templates/include/contact_model/modal_3.html:21
 msgid "Ваш номер телефону"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:23
-#: templates/include/contact_model/modal_3.html:22
+#: templates/include/contact_model/modal_1.html:26
+#: templates/include/contact_model/modal_3.html:25
 msgid "Марка та модель авто"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:27
+#: templates/include/contact_model/modal_1.html:30
 msgid "VIN код"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:31
+#: templates/include/contact_model/modal_1.html:34
 msgid "Назва запчастини"
 msgstr ""
 
-#: templates/include/contact_model/modal_1.html:35
-#: templates/include/contact_model/modal_3.html:30
+#: templates/include/contact_model/modal_1.html:38
+#: templates/include/contact_model/modal_3.html:33
 msgid "Додаткова інформація"
 msgstr ""
 
@@ -123,8 +127,56 @@ msgid ""
 "номером: "
 msgstr ""
 
-#: templates/include/contact_model/modal_3.html:26
+#: templates/include/contact_model/modal_3.html:9
+msgid "Заявка на автовикуп"
+msgstr ""
+
+#: templates/include/contact_model/modal_3.html:29
 msgid "Ваше місто/село"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:9
+msgid "Заявка на автопідбір"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:19
+msgid "Марка та модель авто (наприклад, Audi A6) *"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:23
+msgid "Рік випуску від"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:25
+msgid "наприклад, 2015"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:29
+msgid "До"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:31
+msgid "наприклад, 2023"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:35
+msgid "Бюджет (наприклад, до 15 000 $)"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:39
+msgid "Побажання до авто (коробка, пальне, пробіг тощо)"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:44
+msgid "Ваше ім'я *"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:48
+msgid "Номер телефону *"
+msgstr ""
+
+#: templates/include/contact_model/modal_autopodbor.html:52
+msgid "Надіслати заявку"
 msgstr ""
 
 #: templates/include/contact_model/modal_footer.html:3
